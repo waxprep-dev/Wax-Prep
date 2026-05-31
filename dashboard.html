@@ -1,0 +1,2604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>DAVID OS — Command Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a25;
+            --bg-hover: #222233;
+            --border: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8b8ba3;
+            --text-muted: #555570;
+            --accent-green: #00e676;
+            --accent-green-dim: #00c853;
+            --accent-purple: #b388ff;
+            --accent-purple-dim: #7c4dff;
+            --accent-blue: #40c4ff;
+            --accent-yellow: #ffd740;
+            --accent-red: #ff5252;
+            --accent-orange: #ffab40;
+            --success: #00e676;
+            --warning: #ffd740;
+            --danger: #ff5252;
+            --gradient-green: linear-gradient(135deg, #00e676, #00c853);
+            --gradient-purple: linear-gradient(135deg, #b388ff, #7c4dff);
+            --shadow: 0 4px 20px rgba(0,0,0,0.4);
+            --shadow-green: 0 0 20px rgba(0,230,118,0.2);
+            --shadow-purple: 0 0 20px rgba(179,136,255,0.2);
+            --radius: 12px;
+            --radius-sm: 8px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); }
+        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+        /* ========== LAYOUT ========== */
+        .app { display: flex; min-height: 100vh; }
+
+        /* Sidebar */
+        .sidebar {
+            width: 260px;
+            background: var(--bg-secondary);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 0; left: 0; bottom: 0;
+            z-index: 100;
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar-header {
+            padding: 24px 20px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 40px; height: 40px;
+            background: var(--gradient-green);
+            border-radius: var(--radius-sm);
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 800; font-size: 18px;
+            color: #000;
+            box-shadow: var(--shadow-green);
+        }
+
+        .logo-text {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-sub {
+            font-size: 11px;
+            color: var(--accent-green);
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Navigation */
+        .nav {
+            flex: 1;
+            padding: 12px 10px;
+            overflow-y: auto;
+        }
+
+        .nav-section {
+            margin-bottom: 8px;
+        }
+
+        .nav-label {
+            padding: 8px 14px;
+            font-size: 10px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 11px 14px;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .nav-item:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+        }
+
+        .nav-item.active {
+            background: rgba(0,230,118,0.1);
+            color: var(--accent-green);
+        }
+
+        .nav-item.active::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 50%; transform: translateY(-50%);
+            width: 3px; height: 20px;
+            background: var(--accent-green);
+            border-radius: 0 3px 3px 0;
+        }
+
+        .nav-icon {
+            font-size: 18px;
+            width: 24px;
+            text-align: center;
+        }
+
+        .nav-badge {
+            margin-left: auto;
+            background: var(--accent-red);
+            color: #fff;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 2px 7px;
+            border-radius: 10px;
+            min-width: 18px;
+            text-align: center;
+        }
+
+        /* Sidebar Footer */
+        .sidebar-footer {
+            padding: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        .status-pill {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            background: var(--bg-card);
+            border-radius: var(--radius-sm);
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .status-dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            background: var(--text-muted);
+            position: relative;
+        }
+
+        .status-dot.online { background: var(--accent-green); box-shadow: 0 0 6px var(--accent-green); }
+        .status-dot.warning { background: var(--accent-yellow); }
+        .status-dot.offline { background: var(--accent-red); }
+
+        .status-dot.pulse::after {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 50%;
+            border: 2px solid var(--accent-green);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.6); opacity: 0; }
+        }
+
+        /* Master Toggle */
+        .master-toggle {
+            margin-top: 12px;
+            padding: 12px;
+            background: var(--bg-card);
+            border-radius: var(--radius-sm);
+            text-align: center;
+        }
+
+        .toggle-btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .toggle-btn.on {
+            background: var(--gradient-green);
+            color: #000;
+            box-shadow: var(--shadow-green);
+        }
+
+        .toggle-btn.off {
+            background: rgba(255,82,82,0.2);
+            color: var(--accent-red);
+            border: 1px solid rgba(255,82,82,0.3);
+        }
+
+        /* ========== MAIN CONTENT ========== */
+        .main {
+            flex: 1;
+            margin-left: 260px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top Bar */
+        .topbar {
+            height: 64px;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .topbar-title {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .topbar-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-box input {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 8px 12px 8px 36px;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 13px;
+            width: 260px;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .search-box input:focus {
+            border-color: var(--accent-green);
+            box-shadow: 0 0 0 3px rgba(0,230,118,0.1);
+        }
+
+        .search-box::before {
+            content: '🔍';
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 13px;
+            opacity: 0.5;
+        }
+
+        .icon-btn {
+            width: 36px; height: 36px;
+            border-radius: var(--radius-sm);
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            transition: all 0.2s;
+        }
+
+        .icon-btn:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+        }
+
+        /* Content */
+        .content {
+            flex: 1;
+            padding: 24px;
+            overflow-y: auto;
+        }
+
+        /* ========== TABS ========== */
+        .tab-panel { display: none; }
+        .tab-panel.active { display: block; animation: fadeIn 0.3s ease; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ========== STATS GRID ========== */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            transition: all 0.3s;
+        }
+
+        .stat-card:hover {
+            border-color: var(--text-muted);
+            transform: translateY(-2px);
+        }
+
+        .stat-label {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .stat-change {
+            font-size: 12px;
+            margin-top: 4px;
+            font-weight: 500;
+        }
+
+        .stat-change.up { color: var(--accent-green); }
+        .stat-change.down { color: var(--accent-red); }
+
+        .stat-card.green { border-left: 3px solid var(--accent-green); }
+        .stat-card.purple { border-left: 3px solid var(--accent-purple); }
+        .stat-card.yellow { border-left: 3px solid var(--accent-yellow); }
+        .stat-card.red { border-left: 3px solid var(--accent-red); }
+        .stat-card.blue { border-left: 3px solid var(--accent-blue); }
+
+        /* ========== CARD ========== */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .card-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .card-body {
+            padding: 16px 20px;
+        }
+
+        /* ========== TABLE ========== */
+        .table-container { overflow-x: auto; }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        .data-table thead th {
+            text-align: left;
+            padding: 10px 16px;
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid var(--border);
+            white-space: nowrap;
+        }
+
+        .data-table tbody td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+            vertical-align: middle;
+        }
+
+        .data-table tbody tr:hover td {
+            background: rgba(255,255,255,0.02);
+        }
+
+        .data-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* ========== BADGES ========== */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .badge-green { background: rgba(0,230,118,0.15); color: var(--accent-green); }
+        .badge-yellow { background: rgba(255,215,64,0.15); color: var(--accent-yellow); }
+        .badge-red { background: rgba(255,82,82,0.15); color: var(--accent-red); }
+        .badge-blue { background: rgba(64,196,255,0.15); color: var(--accent-blue); }
+        .badge-purple { background: rgba(179,136,255,0.15); color: var(--accent-purple); }
+        .badge-gray { background: rgba(255,255,255,0.05); color: var(--text-muted); }
+
+        /* ========== CONVERSATION LIST ========== */
+        .conv-list { }
+
+        .conv-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 14px 20px;
+            border-bottom: 1px solid var(--border);
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .conv-item:hover {
+            background: var(--bg-hover);
+        }
+
+        .conv-item:last-child { border-bottom: none; }
+
+        .conv-avatar {
+            width: 44px; height: 44px;
+            border-radius: 50%;
+            background: var(--gradient-purple);
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 16px;
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .conv-avatar.family { background: linear-gradient(135deg, #ff5252, #ff8a80); }
+        .conv-avatar.friend { background: linear-gradient(135deg, #00e676, #69f0ae); }
+        .conv-avatar.business { background: linear-gradient(135deg, #448aff, #82b1ff); }
+        .conv-avatar.stranger { background: linear-gradient(135deg, #78909c, #b0bec5); }
+
+        .conv-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .conv-name {
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .conv-preview {
+            font-size: 13px;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-top: 3px;
+        }
+
+        .conv-meta {
+            text-align: right;
+            flex-shrink: 0;
+        }
+
+        .conv-time {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .conv-status {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: 6px;
+        }
+
+        .conv-status.ai { background: var(--accent-green); }
+        .conv-status.review { background: var(--accent-yellow); }
+        .conv-status.escalated { background: var(--accent-red); }
+
+        /* ========== QR SECTION ========== */
+        .qr-section {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .qr-code {
+            width: 280px; height: 280px;
+            margin: 0 auto 20px;
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 16px;
+        }
+
+        .qr-code img {
+            width: 100%; height: 100%;
+            object-fit: contain;
+        }
+
+        /* ========== TOGGLE SWITCH ========== */
+        .switch {
+            position: relative;
+            width: 44px; height: 24px;
+            display: inline-block;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0; height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            inset: 0;
+            background: var(--text-muted);
+            border-radius: 24px;
+            transition: 0.3s;
+        }
+
+        .slider::before {
+            content: '';
+            position: absolute;
+            height: 18px; width: 18px;
+            left: 3px; bottom: 3px;
+            background: #fff;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .switch input:checked + .slider { background: var(--accent-green); }
+        .switch input:checked + .slider::before { transform: translateX(20px); }
+
+        /* ========== FORM CONTROLS ========== */
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 10px 14px;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 13px;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            border-color: var(--accent-green);
+            box-shadow: 0 0 0 3px rgba(0,230,118,0.1);
+        }
+
+        .form-textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--gradient-green);
+            color: #000;
+            box-shadow: var(--shadow-green);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 25px rgba(0,230,118,0.3);
+        }
+
+        .btn-secondary {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover { background: var(--border); }
+        .btn-sm { padding: 6px 12px; font-size: 12px; }
+
+        .btn-danger {
+            background: rgba(255,82,82,0.2);
+            color: var(--accent-red);
+            border: 1px solid rgba(255,82,82,0.3);
+        }
+
+        .btn-danger:hover { background: rgba(255,82,82,0.3); }
+
+        /* ========== SLIDER ========== */
+        .range-slider {
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            background: var(--bg-hover);
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        .range-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px; height: 18px;
+            border-radius: 50%;
+            background: var(--accent-green);
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0,230,118,0.4);
+        }
+
+        /* ========== CHAT VIEW ========== */
+        .chat-view {
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+        }
+
+        .chat-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .chat-msg {
+            max-width: 70%;
+            padding: 10px 14px;
+            border-radius: var(--radius);
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .chat-msg.inbound {
+            align-self: flex-start;
+            background: var(--bg-hover);
+            color: var(--text-primary);
+            border-bottom-left-radius: 4px;
+        }
+
+        .chat-msg.outbound {
+            align-self: flex-end;
+            background: var(--gradient-green);
+            color: #000;
+            border-bottom-right-radius: 4px;
+        }
+
+        .chat-msg-time {
+            font-size: 10px;
+            opacity: 0.6;
+            margin-top: 4px;
+        }
+
+        .chat-input-area {
+            padding: 16px 20px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            gap: 10px;
+        }
+
+        .chat-input {
+            flex: 1;
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 10px 14px;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 13px;
+            outline: none;
+        }
+
+        .chat-input:focus { border-color: var(--accent-green); }
+
+        /* ========== MODAL ========== */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(4px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .modal {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow: hidden;
+            transform: translateY(20px);
+            transition: transform 0.3s;
+        }
+
+        .modal-overlay.active .modal {
+            transform: translateY(0);
+        }
+
+        .modal-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .modal-body {
+            padding: 20px;
+            overflow-y: auto;
+            max-height: 60vh;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 20px;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .modal-close:hover { color: var(--text-primary); }
+
+        /* ========== QUEUE ITEMS ========== */
+        .queue-item {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px;
+            margin-bottom: 12px;
+            transition: all 0.2s;
+        }
+
+        .queue-item:hover {
+            border-color: var(--accent-yellow);
+        }
+
+        .queue-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 20px;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+            }
+
+            .main {
+                margin-left: 0;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .search-box input {
+                width: 160px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .content {
+                padding: 16px;
+            }
+
+            .topbar {
+                padding: 0 16px;
+            }
+
+            .conv-item {
+                padding: 12px 16px;
+            }
+        }
+
+        /* ========== LOADING ========== */
+        .skeleton {
+            background: linear-gradient(90deg, var(--bg-card) 25%, var(--bg-hover) 50%, var(--bg-card) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+            border-radius: var(--radius-sm);
+        }
+
+        @keyframes shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        /* ========== ANIMATIONS ========== */
+        .fade-in {
+            animation: fadeIn 0.4s ease;
+        }
+
+        .slide-in {
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-20px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        /* ========== EMPTY STATE ========== */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-muted);
+        }
+
+        .empty-state-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+            opacity: 0.5;
+        }
+
+        .empty-state-text {
+            font-size: 14px;
+        }
+
+        /* ========== NOTIFICATION ========== */
+        .toast-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 2000;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .toast {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            box-shadow: var(--shadow);
+            animation: toastIn 0.3s ease;
+            max-width: 350px;
+        }
+
+        .toast.success { border-left: 3px solid var(--accent-green); }
+        .toast.warning { border-left: 3px solid var(--accent-yellow); }
+        .toast.error { border-left: 3px solid var(--accent-red); }
+
+        @keyframes toastIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes toastOut {
+            from { transform: translateX(0); opacity: 1; }
+            to { transform: translateX(100%); opacity: 0; }
+        }
+
+        /* ========== LOGS ========== */
+        .log-entry {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            padding: 6px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.03);
+            color: var(--text-secondary);
+        }
+
+        .log-time { color: var(--text-muted); margin-right: 8px; }
+        .log-level-info { color: var(--accent-blue); }
+        .log-level-warn { color: var(--accent-yellow); }
+        .log-level-error { color: var(--accent-red); }
+
+        /* ========== CHART PLACEHOLDER ========== */
+        .chart-placeholder {
+            height: 200px;
+            background: var(--bg-primary);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">D</div>
+                    <div>
+                        <div class="logo-text">DAVID OS</div>
+                        <div class="logo-sub">Command Center</div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <div class="nav-section">
+                    <div class="nav-label">Main</div>
+                    <div class="nav-item active" data-tab="live">
+                        <span class="nav-icon">📡</span>
+                        <span>Live Feed</span>
+                        <span class="nav-badge" id="live-badge" style="display:none">0</span>
+                    </div>
+                    <div class="nav-item" data-tab="control">
+                        <span class="nav-icon">🎛️</span>
+                        <span>Control Room</span>
+                    </div>
+                    <div class="nav-item" data-tab="queue">
+                        <span class="nav-icon">⏳</span>
+                        <span>Response Queue</span>
+                        <span class="nav-badge" id="queue-badge" style="display:none">0</span>
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-label">People</div>
+                    <div class="nav-item" data-tab="contacts">
+                        <span class="nav-icon">👥</span>
+                        <span>Contacts</span>
+                    </div>
+                    <div class="nav-item" data-tab="escalations">
+                        <span class="nav-icon">🚨</span>
+                        <span>Escalations</span>
+                        <span class="nav-badge" id="esc-badge" style="display:none">0</span>
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-label">Insights</div>
+                    <div class="nav-item" data-tab="analytics">
+                        <span class="nav-icon">📊</span>
+                        <span>Analytics</span>
+                    </div>
+                    <div class="nav-item" data-tab="voice">
+                        <span class="nav-icon">🎙️</span>
+                        <span>Voice Studio</span>
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-label">System</div>
+                    <div class="nav-item" data-tab="settings">
+                        <span class="nav-icon">⚙️</span>
+                        <span>Settings</span>
+                    </div>
+                    <div class="nav-item" data-tab="logs">
+                        <span class="nav-icon">📋</span>
+                        <span>System Logs</span>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="status-pill">
+                    <span class="status-dot offline" id="status-dot"></span>
+                    <span id="status-text">Disconnected</span>
+                </div>
+                <div class="master-toggle">
+                    <button class="toggle-btn on" id="master-toggle">AI ON</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Overlay for mobile -->
+        <div class="modal-overlay" id="sidebar-overlay" style="z-index:99" onclick="toggleSidebar()"></div>
+
+        <!-- Main Content -->
+        <main class="main">
+            <div class="topbar">
+                <div style="display:flex;align-items:center;gap:12px">
+                    <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+                    <h1 class="topbar-title" id="page-title">Live Feed</h1>
+                </div>
+                <div class="topbar-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search contacts, messages..." id="global-search">
+                    </div>
+                    <button class="icon-btn" onclick="refreshData()" title="Refresh">🔄</button>
+                    <button class="icon-btn" onclick="showNotifications()" title="Notifications">🔔</button>
+                </div>
+            </div>
+
+            <div class="content">
+                <!-- LIVE FEED TAB -->
+                <div class="tab-panel active" id="tab-live">
+                    <div class="stats-grid">
+                        <div class="stat-card green">
+                            <div class="stat-label">Messages Today</div>
+                            <div class="stat-value" id="stat-messages">0</div>
+                            <div class="stat-change up">AI handling 92%</div>
+                        </div>
+                        <div class="stat-card purple">
+                            <div class="stat-label">Active Conversations</div>
+                            <div class="stat-value" id="stat-conversations">0</div>
+                        </div>
+                        <div class="stat-card yellow">
+                            <div class="stat-label">Pending Review</div>
+                            <div class="stat-value" id="stat-pending">0</div>
+                        </div>
+                        <div class="stat-card red">
+                            <div class="stat-label">Escalations</div>
+                            <div class="stat-value" id="stat-escalations">0</div>
+                        </div>
+                        <div class="stat-card blue">
+                            <div class="stat-label">AI Confidence</div>
+                            <div class="stat-value" id="stat-confidence">94%</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-title">Active Conversations</span>
+                            <div style="display:flex;gap:8px">
+                                <select class="form-select" style="width:auto;font-size:12px;padding:6px 10px" id="conv-filter">
+                                    <option value="all">All</option>
+                                    <option value="family">Family</option>
+                                    <option value="close_friend">Close Friends</option>
+                                    <option value="business">Business</option>
+                                    <option value="escalated">Escalated</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card-body" style="padding:0">
+                            <div id="conversations-list">
+                                <div class="empty-state">
+                                    <div class="empty-state-icon">📡</div>
+                                    <div class="empty-state-text">Waiting for messages...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- QR Section when not connected -->
+                    <div class="card" id="qr-card" style="display:none">
+                        <div class="card-header">
+                            <span class="card-title">Connect WhatsApp</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="qr-section">
+                                <div class="qr-code" id="qr-display">
+                                    <div class="skeleton" style="width:100%;height:100%"></div>
+                                </div>
+                                <p style="color:var(--text-secondary);font-size:14px">Scan this QR code with WhatsApp on your phone</p>
+                                <p style="color:var(--text-muted);font-size:12px;margin-top:8px">Settings → Linked Devices → Link a Device</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTROL ROOM TAB -->
+                <div class="tab-panel" id="tab-control">
+                    <div class="stats-grid">
+                        <div class="stat-card green" style="cursor:pointer" onclick="toggleAI()">
+                            <div class="stat-label">AI Status</div>
+                            <div class="stat-value" id="control-ai-status" style="font-size:20px">ON</div>
+                            <div class="stat-change up">Click to toggle</div>
+                        </div>
+                        <div class="stat-card blue">
+                            <div class="stat-label">Response Speed</div>
+                            <div class="stat-value" style="font-size:20px" id="control-speed">Normal</div>
+                        </div>
+                        <div class="stat-card purple">
+                            <div class="stat-label">Ghost Mode</div>
+                            <div class="stat-value" style="font-size:20px" id="control-ghost">0</div>
+                            <div class="stat-change">contacts watching</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-title">Global Settings</span>
+                        </div>
+                        <div class="card-body">
+                            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
+                                <div class="form-group">
+                                    <label class="form-label">Response Delay (seconds)</label>
+                                    <input type="range" class="range-slider" min="0" max="30" value="5" id="delay-slider" oninput="updateDelayLabel(this.value)">
+                                    <div style="display:flex;justify-content:space-between;margin-top:4px;font-size:11px;color:var(--text-muted)">
+                                        <span>Instant</span>
+                                        <span id="delay-label">5s</span>
+                                        <span>30s</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Message Length</label>
+                                    <select class="form-select" id="msg-length" onchange="updateSetting('message_length', this.value)">
+                                        <option value="short">Short (1-2 lines)</option>
+                                        <option value="medium" selected>Medium (2-3 lines)</option>
+                                        <option value="long">Long (up to 5 lines)</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Confidence Threshold</label>
+                                    <input type="range" class="range-slider" min="10" max="100" value="70" id="confidence-slider" oninput="updateConfidenceLabel(this.value)">
+                                    <div style="text-align:center;margin-top:4px;font-size:11px;color:var(--text-muted)" id="confidence-label">70% — Balanced</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Quiet Hours</label>
+                                    <div style="display:flex;gap:8px;align-items:center">
+                                        <input type="time" class="form-input" value="00:00" id="quiet-start">
+                                        <span style="color:var(--text-muted)">to</span>
+                                        <input type="time" class="form-input" value="06:00" id="quiet-end">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--border)">
+                                <button class="btn btn-primary" onclick="saveControlSettings()">Save Settings</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-title">Per-Contact Controls</span>
+                            <div class="search-box">
+                                <input type="text" placeholder="Search contacts..." id="control-search" oninput="filterControlContacts(this.value)">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-container">
+                                <table class="data-table" id="control-contacts-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Contact</th>
+                                            <th>AI</th>
+                                            <th>Ghost</th>
+                                            <th>Alert</th>
+                                            <th>Relationship</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="control-contacts-body">
+                                        <tr><td colspan="5" style="text-align:center;color:var(--text-muted)">Loading...</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RESPONSE QUEUE TAB -->
+                <div class="tab-panel" id="tab-queue">
+                    <div class="stats-grid">
+                        <div class="stat-card yellow">
+                            <div class="stat-label">Pending</div>
+                            <div class="stat-value" id="queue-pending">0</div>
+                        </div>
+                        <div class="stat-card green">
+                            <div class="stat-label">Approved Today</div>
+                            <div class="stat-value" id="queue-approved">0</div>
+                        </div>
+                        <div class="stat-card red">
+                            <div class="stat-label">Rejected</div>
+                            <div class="stat-value" id="queue-rejected">0</div>
+                        </div>
+                    </div>
+
+                    <div id="queue-list">
+                        <div class="empty-state">
+                            <div class="empty-state-icon">⏳</div>
+                            <div class="empty-state-text">No messages in queue</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTACTS TAB -->
+                <div class="tab-panel" id="tab-contacts">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-title">All Contacts</span>
+                            <div style="display:flex;gap:8px">
+                                <select class="form-select" style="width:auto;font-size:12px" id="contact-filter-type" onchange="loadContacts()">
+                                    <option value="">All Types</option>
+                                    <option value="family">Family</option>
+                                    <option value="close_friend">Close Friend</option>
+                                    <option value="business">Business</option>
+                                    <option value="acquaintance">Acquaintance</option>
+                                    <option value="stranger">Stranger</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card-body" style="padding:0">
+                            <div class="table-container">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Phone</th>
+                                            <th>Type</th>
+                                            <th>Messages</th>
+                                            <th>Trust</th>
+                                            <th>Last Active</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="contacts-body">
+                                        <tr><td colspan="7" style="text-align:center;color:var(--text-muted)">Loading contacts...</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ESCALATIONS TAB -->
+                <div class="tab-panel" id="tab-escalations">
+                    <div class="stats-grid">
+                        <div class="stat-card red">
+                            <div class="stat-label">Critical</div>
+                            <div class="stat-value" id="esc-critical">0</div>
+                        </div>
+                        <div class="stat-card yellow">
+                            <div class="stat-label">High</div>
+                            <div class="stat-value" id="esc-high">0</div>
+                        </div>
+                        <div class="stat-card blue">
+                            <div class="stat-label">Medium</div>
+                            <div class="stat-value" id="esc-medium">0</div>
+                        </div>
+                        <div class="stat-card gray">
+                            <div class="stat-label">Resolved</div>
+                            <div class="stat-value" id="esc-resolved">0</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-title">Active Escalations</span>
+                            <div style="display:flex;gap:8px">
+                                <select class="form-select" style="width:auto;font-size:12px" id="esc-filter" onchange="loadEscalations()">
+                                    <option value="all">All</option>
+                                    <option value="critical">Critical</option>
+                                    <option value="high">High</option>
+                                    <option value="medium">Medium</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card-body" style="padding:0">
+                            <div id="escalations-list">
+                                <div class="empty-state">
+                                    <div class="empty-state-icon">🛡️</div>
+                                    <div class="empty-state-text">No active escalations</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ANALYTICS TAB -->
+                <div class="tab-panel" id="tab-analytics">
+                    <div class="stats-grid">
+                        <div class="stat-card green">
+                            <div class="stat-label">AI Handle Rate</div>
+                            <div class="stat-value" id="analytics-ai-rate">92%</div>
+                        </div>
+                        <div class="stat-card purple">
+                            <div class="stat-label">Avg Response Time</div>
+                            <div class="stat-value" id="analytics-avg-time">2.4s</div>
+                        </div>
+                        <div class="stat-card blue">
+                            <div class="stat-label">Daily Cost</div>
+                            <div class="stat-value" id="analytics-cost">$0.42</div>
+                        </div>
+                        <div class="stat-card yellow">
+                            <div class="stat-label">Most Active Hour</div>
+                            <div class="stat-value" id="analytics-peak">2PM</div>
+                        </div>
+                    </div>
+
+                    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:20px">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="card-title">Hourly Distribution</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-placeholder" id="hourly-chart">Loading chart...</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="card-title">Message Volume (7 Days)</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-placeholder" id="volume-chart">Loading chart...</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="card-title">Cost Breakdown</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-placeholder" id="cost-chart">Loading chart...</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="card-title">Contact Activity</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-placeholder" id="activity-chart">Loading chart...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VOICE STUDIO TAB -->
+                <div class="tab-panel" id="tab-voice">
+                    <div class="stats-grid">
+                        <div class="stat-card purple">
+                            <div class="stat-label">Voice Notes</div>
+                            <div class="stat-value" id="voice-count">0</div>
+                        </div>
+                        <div class="stat-card blue">
+                            <div class="stat-label">Transcribed</div>
+                            <div class="stat-value" id="voice-transcribed">0</div>
+                        </div>
+                        <div class="stat-card green">
+                            <div class="stat-label">Total Duration</div>
+                            <div class="stat-value" id="voice-duration">0m</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-title">Voice Note Library</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="empty-state">
+                                <div class="empty-state-icon">🎙️</div>
+                                <div class="empty-state-text">No voice notes yet</div>
+                                <p style="font-size:12px;margin-top:8px">Voice notes will appear here automatically</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SETTINGS TAB -->
+                <div class="tab-panel" id="tab-settings">
+                    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:20px">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="card-title">General</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label class="form-label">David's Name</label>
+                                    <input type="text" class="form-input" value="David" id="setting-name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Timezone</label>
+                                    <select class="form-select" id="setting-timezone">
+                                        <option value="Africa/Lagos" selected>Africa/Lagos (WAT)</option>
+                                        <option value="UTC">UTC</option>
+                                        <option value="Europe/London">London</option>
+                                        <option value="America/New_York">New York</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Auto-Delete After (days)</label>
+                                    <input type="number" class="form-input" value="90" min="7" max="365" id="setting-archive">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="card-title">AI Behavior</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label class="form-label">Default Self-Reveal</label>
+                                    <label class="switch">
+                                        <input type="checkbox" id="setting-reveal">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Emergency Alerts</label>
+                                    <label class="switch">
+                                        <input type="checkbox" checked id="setting-emergency">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Negotiation Budget Threshold (₦)</label>
+                                    <input type="number" class="form-input" value="50000" id="setting-budget">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="card-title">Cost Management</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label class="form-label">Daily Cost Limit (USD)</label>
+                                    <input type="number" class="form-input" value="10" step="0.5" id="setting-cost-limit">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Cost Tracking</label>
+                                    <label class="switch">
+                                        <input type="checkbox" checked id="setting-cost-tracking">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="card-title">Privacy & Security</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label class="form-label">Export All Data</label>
+                                    <button class="btn btn-secondary" onclick="exportData()">📥 Export JSON</button>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Danger Zone</label>
+                                    <button class="btn btn-danger" onclick="resetSettings()">⚠️ Reset to Defaults</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top:20px">
+                        <button class="btn btn-primary" onclick="saveAllSettings()">💾 Save All Settings</button>
+                    </div>
+                </div>
+
+                <!-- LOGS TAB -->
+                <div class="tab-panel" id="tab-logs">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-title">System Logs</span>
+                            <div style="display:flex;gap:8px">
+                                <select class="form-select" style="width:auto;font-size:12px" id="log-filter" onchange="filterLogs()">
+                                    <option value="all">All</option>
+                                    <option value="info">Info</option>
+                                    <option value="warn">Warning</option>
+                                    <option value="error">Error</option>
+                                </select>
+                                <button class="btn btn-sm btn-secondary" onclick="clearLogs()">Clear</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="logs-container" style="max-height:600px;overflow-y:auto;font-family:'JetBrains Mono',monospace;font-size:12px">
+                                <div class="empty-state">
+                                    <div class="empty-state-text">Logs will appear here</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Chat Modal -->
+    <div class="modal-overlay" id="chat-modal">
+        <div class="modal" style="max-width:600px">
+            <div class="modal-header">
+                <div style="display:flex;align-items:center;gap:12px">
+                    <div class="conv-avatar" id="chat-avatar">D</div>
+                    <div>
+                        <div style="font-weight:600" id="chat-name">Contact</div>
+                        <div style="font-size:12px;color:var(--text-muted)" id="chat-phone">+234...</div>
+                    </div>
+                </div>
+                <button class="modal-close" onclick="closeChat()">✕</button>
+            </div>
+            <div class="modal-body" style="padding:0">
+                <div class="chat-messages" id="chat-messages"></div>
+                <div class="chat-input-area">
+                    <input type="text" class="chat-input" placeholder="Type a message..." id="chat-input" onkeypress="if(event.key==='Enter')sendChatMessage()">
+                    <button class="btn btn-primary" onclick="sendChatMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ============================================
+        // DAVID OS DASHBOARD — Client JavaScript
+        // ============================================
+
+        const API_BASE = window.location.origin + '/api';
+        let ws = null;
+        let currentTab = 'live';
+        let conversations = [];
+        let contacts = [];
+        let queue = [];
+        let escalations = [];
+        let settings = {};
+        let currentChatContact = null;
+
+        // ============================================
+        // INIT
+        // ============================================
+        document.addEventListener('DOMContentLoaded', () => {
+            initTabs();
+            initWebSocket();
+            loadInitialData();
+            startRefreshCycle();
+        });
+
+        function initTabs() {
+            document.querySelectorAll('.nav-item[data-tab]').forEach(item => {
+                item.addEventListener('click', () => {
+                    const tab = item.dataset.tab;
+                    switchTab(tab);
+                    if (window.innerWidth <= 768) toggleSidebar();
+                });
+            });
+        }
+
+        function switchTab(tab) {
+            currentTab = tab;
+
+            // Update nav
+            document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+            document.querySelector(`[data-tab="${tab}"]`)?.classList.add('active');
+
+            // Update panels
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            document.getElementById(`tab-${tab}`)?.classList.add('active');
+
+            // Update title
+            const titles = {
+                live: 'Live Feed',
+                control: 'Control Room',
+                queue: 'Response Queue',
+                contacts: 'Contacts',
+                escalations: 'Escalations',
+                analytics: 'Analytics',
+                voice: 'Voice Studio',
+                settings: 'Settings',
+                logs: 'System Logs'
+            };
+            document.getElementById('page-title').textContent = titles[tab] || 'DAVID OS';
+
+            // Load tab-specific data
+            if (tab === 'contacts') loadContacts();
+            if (tab === 'queue') loadQueue();
+            if (tab === 'escalations') loadEscalations();
+            if (tab === 'analytics') loadAnalytics();
+            if (tab === 'control') loadControlContacts();
+            if (tab === 'settings') loadSettings();
+        }
+
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('open');
+            document.getElementById('sidebar-overlay').classList.toggle('active');
+        }
+
+        // ============================================
+        // WEBSOCKET
+        // ============================================
+        function initWebSocket() {
+            const wsUrl = `wss://${window.location.host}/ws`;
+            
+            try {
+                ws = new WebSocket(wsUrl);
+
+                ws.onopen = () => {
+                    showToast('Connected to DAVID OS', 'success');
+                    updateStatusDot('online');
+                };
+
+                ws.onmessage = (event) => {
+                    const data = JSON.parse(event.data);
+                    handleWebSocketMessage(data);
+                };
+
+                ws.onclose = () => {
+                    updateStatusDot('offline');
+                    setTimeout(initWebSocket, 5000); // Reconnect
+                };
+
+                ws.onerror = () => {
+                    updateStatusDot('warning');
+                };
+            } catch (e) {
+                console.log('WebSocket not available, using polling');
+                startPolling();
+            }
+        }
+
+        function handleWebSocketMessage(data) {
+            switch (data.type) {
+                case 'message':
+                    handleRealtimeMessage(data);
+                    break;
+                case 'escalation':
+                    handleRealtimeEscalation(data);
+                    break;
+                case 'queue':
+                    handleRealtimeQueue(data);
+                    break;
+                case 'status':
+                    updateConnectionStatus(data.status, data.message);
+                    break;
+                case 'qr':
+                    showQRCode(data.qr);
+                    break;
+                case 'heartbeat':
+                    updateStats(data.stats);
+                    break;
+                case 'settings':
+                    updateMasterToggle(data.aiEnabled);
+                    break;
+            }
+        }
+
+        function startPolling() {
+            setInterval(() => {
+                if (currentTab === 'live') loadLiveFeed();
+                checkQRCode();
+            }, 3000);
+        }
+
+        // ============================================
+        // DATA LOADING
+        // ============================================
+        async function loadInitialData() {
+            await Promise.all([
+                loadLiveFeed(),
+                loadStats(),
+                checkQRCode(),
+                checkStatus()
+            ]);
+        }
+
+        function startRefreshCycle() {
+            setInterval(() => {
+                if (currentTab === 'live') loadLiveFeed();
+                if (currentTab === 'queue') loadQueue();
+                if (currentTab === 'escalations') loadEscalations();
+            }, 5000);
+        }
+
+        async function loadLiveFeed() {
+            try {
+                const [convRes, msgRes] = await Promise.all([
+                    fetch(`${API_BASE}/conversations`),
+                    fetch(`${API_BASE}/messages?limit=50`)
+                ]);
+
+                const convData = await convRes.json();
+                const msgData = await msgRes.json();
+
+                conversations = convData.conversations || [];
+                renderConversations(conversations);
+                updateMessageStats(msgData.messages || []);
+            } catch (e) {
+                console.error('Load live feed error:', e);
+            }
+        }
+
+        async function loadStats() {
+            try {
+                const res = await fetch(`${API_BASE}/analytics`);
+                const data = await res.json();
+
+                document.getElementById('stat-messages').textContent = data.messages?.aiHandled || 0;
+                document.getElementById('stat-conversations').textContent = data.contacts?.total || 0;
+                document.getElementById('stat-pending').textContent = data.escalations?.unresolved || 0;
+                document.getElementById('stat-escalations').textContent = data.escalations?.total || 0;
+
+                // Update badges
+                updateBadge('live-badge', conversations.filter(c => c.status === 'escalated').length);
+            } catch (e) {
+                console.error('Load stats error:', e);
+            }
+        }
+
+        async function loadContacts() {
+            try {
+                const type = document.getElementById('contact-filter-type').value;
+                const res = await fetch(`${API_BASE}/contacts?limit=100${type ? '&type=' + type : ''}`);
+                const data = await res.json();
+
+                contacts = data.contacts || [];
+                renderContacts(contacts);
+            } catch (e) {
+                console.error('Load contacts error:', e);
+            }
+        }
+
+        async function loadQueue() {
+            try {
+                const res = await fetch(`${API_BASE}/queue`);
+                const data = await res.json();
+
+                queue = data.items || [];
+                renderQueue(queue);
+
+                document.getElementById('queue-pending').textContent = queue.length;
+                updateBadge('queue-badge', queue.length);
+            } catch (e) {
+                console.error('Load queue error:', e);
+            }
+        }
+
+        async function loadEscalations() {
+            try {
+                const filter = document.getElementById('esc-filter').value;
+                const url = filter === 'all' 
+                    ? `${API_BASE}/escalations` 
+                    : `${API_BASE}/escalations?severity=${filter}`;
+
+                const res = await fetch(url);
+                const data = await res.json();
+
+                escalations = data.escalations || [];
+                renderEscalations(escalations);
+
+                // Update counts
+                const stats = { critical: 0, high: 0, medium: 0, resolved: 0 };
+                escalations.forEach(e => {
+                    if (e.resolved) stats.resolved++;
+                    else if (e.severity) stats[e.severity] = (stats[e.severity] || 0) + 1;
+                });
+
+                document.getElementById('esc-critical').textContent = stats.critical;
+                document.getElementById('esc-high').textContent = stats.high;
+                document.getElementById('esc-medium').textContent = stats.medium;
+                document.getElementById('esc-resolved').textContent = stats.resolved;
+                updateBadge('esc-badge', stats.critical + stats.high);
+            } catch (e) {
+                console.error('Load escalations error:', e);
+            }
+        }
+
+        async function loadAnalytics() {
+            try {
+                const res = await fetch(`${API_BASE}/analytics?period=week`);
+                const data = await res.json();
+
+                // Render charts (placeholder implementation)
+                document.getElementById('analytics-ai-rate').textContent = 
+                    data.messages?.total > 0 
+                        ? Math.round((data.messages.aiHandled / data.messages.total) * 100) + '%'
+                        : 'N/A';
+                document.getElementById('analytics-cost').textContent = '$' + (data.costs?.total || 0).toFixed(2);
+
+                // Hourly chart as bars
+                if (data.hourlyDistribution) {
+                    renderHourlyChart(data.hourlyDistribution);
+                }
+            } catch (e) {
+                console.error('Load analytics error:', e);
+            }
+        }
+
+        async function loadControlContacts() {
+            try {
+                const res = await fetch(`${API_BASE}/contacts?limit=100`);
+                const data = await res.json();
+                renderControlContacts(data.contacts || []);
+            } catch (e) {
+                console.error('Load control contacts error:', e);
+            }
+        }
+
+        async function loadSettings() {
+            try {
+                const res = await fetch(`${API_BASE}/settings`);
+                settings = await res.json();
+
+                document.getElementById('setting-name').value = settings.name || 'David';
+                document.getElementById('setting-archive').value = settings.auto_archive_days || 90;
+                document.getElementById('setting-budget').value = settings.negotiation_budget_threshold || 50000;
+                document.getElementById('setting-cost-limit').value = settings.cost_limit_daily_usd || 10;
+
+                document.getElementById('setting-reveal').checked = settings.self_reveal_default === true;
+                document.getElementById('setting-emergency').checked = settings.emergency_alert !== false;
+                document.getElementById('setting-cost-tracking').checked = settings.cost_tracking_enabled !== false;
+            } catch (e) {
+                console.error('Load settings error:', e);
+            }
+        }
+
+        // ============================================
+        // RENDERING
+        // ============================================
+        function renderConversations(convs) {
+            const container = document.getElementById('conversations-list');
+
+            if (!convs || convs.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-icon">📡</div>
+                        <div class="empty-state-text">No active conversations</div>
+                    </div>`;
+                return;
+            }
+
+            container.innerHTML = convs.map(conv => {
+                const contact = conv.contact || {};
+                const type = contact.relationship_type || 'stranger';
+                const avatarClass = type === 'family' ? 'family' : type === 'close_friend' ? 'friend' : type === 'business' ? 'business' : 'stranger';
+                const initials = (contact.name || contact.phone_number || '?').substring(0, 2).toUpperCase();
+                const status = conv.status === 'escalated' ? 'escalated' : conv.ai_handled ? 'ai' : 'review';
+
+                return `
+                    <div class="conv-item" onclick="openChat('${contact.id}', '${contact.name || 'Unknown'}', '${contact.phone_number}')">
+                        <div class="conv-avatar ${avatarClass}">${initials}</div>
+                        <div class="conv-info">
+                            <div class="conv-name">
+                                ${contact.name || contact.phone_number || 'Unknown'}
+                                <span class="badge badge-${type === 'family' ? 'red' : type === 'close_friend' ? 'green' : type === 'business' ? 'blue' : 'gray'}">${type.replace('_', ' ')}</span>
+                            </div>
+                            <div class="conv-preview">${conv.last_message_preview || 'No messages'}</div>
+                        </div>
+                        <div class="conv-meta">
+                            <div class="conv-time">${formatTime(conv.last_message_at)}</div>
+                            <span class="conv-status ${status}"></span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderContacts(contactList) {
+            const tbody = document.getElementById('contacts-body');
+
+            if (!contactList || contactList.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:var(--text-muted)">No contacts</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = contactList.map(c => `
+                <tr>
+                    <td style="font-weight:600;color:var(--text-primary)">${c.name || 'Unknown'}</td>
+                    <td style="font-family:monospace;font-size:12px">${c.phone_number}</td>
+                    <td><span class="badge badge-${c.relationship_type === 'family' ? 'red' : c.relationship_type === 'close_friend' ? 'green' : c.relationship_type === 'business' ? 'blue' : 'gray'}">${(c.relationship_type || 'stranger').replace('_', ' ')}</span></td>
+                    <td>${c.message_count || 0}</td>
+                    <td>
+                        <div style="background:var(--bg-primary);height:6px;border-radius:3px;overflow:hidden;width:60px;display:inline-block;vertical-align:middle;margin-right:6px">
+                            <div style="background:${c.trust_level > 70 ? 'var(--accent-green)' : c.trust_level > 40 ? 'var(--accent-yellow)' : 'var(--accent-red)'};height:100%;width:${c.trust_level || 50}%"></div>
+                        </div>
+                        <span style="font-size:11px">${c.trust_level || 50}</span>
+                    </td>
+                    <td style="font-size:12px">${formatTime(c.last_interaction)}</td>
+                    <td>
+                        <button class="btn btn-sm btn-secondary" onclick="editContact('${c.id}')">Edit</button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function renderQueue(items) {
+            const container = document.getElementById('queue-list');
+
+            if (!items || items.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-icon">⏳</div>
+                        <div class="empty-state-text">No messages in queue</div>
+                    </div>`;
+                return;
+            }
+
+            container.innerHTML = items.map(item => {
+                const contact = item.contact || {};
+                return `
+                    <div class="queue-item">
+                        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+                            <div style="display:flex;align-items:center;gap:8px">
+                                <div class="conv-avatar" style="width:32px;height:32px;font-size:12px">${(contact.name || '?').substring(0, 2).toUpperCase()}</div>
+                                <div>
+                                    <div style="font-weight:600;font-size:13px">${contact.name || 'Unknown'}</div>
+                                    <div style="font-size:11px;color:var(--text-muted)">${contact.phone_number}</div>
+                                </div>
+                            </div>
+                            <span class="badge badge-yellow">${Math.round((item.ai_confidence || 0) * 100)}% confidence</span>
+                        </div>
+                        <div style="background:var(--bg-primary);padding:10px;border-radius:8px;margin-bottom:8px">
+                            <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">INCOMING:</div>
+                            <div style="font-size:13px">${item.incoming_message}</div>
+                        </div>
+                        <div style="background:var(--bg-primary);padding:10px;border-radius:8px;margin-bottom:12px">
+                            <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">SUGGESTED:</div>
+                            <div style="font-size:13px;color:var(--accent-green)">${item.suggested_response}</div>
+                        </div>
+                        ${item.context_summary ? `<div style="font-size:11px;color:var(--text-muted);margin-bottom:12px">Context: ${item.context_summary}</div>` : ''}
+                        <div class="queue-actions">
+                            <button class="btn btn-sm btn-primary" onclick="approveQueueItem('${item.id}')">✓ Approve</button>
+                            <button class="btn btn-sm btn-secondary" onclick="editQueueItem('${item.id}', '${encodeURIComponent(item.suggested_response)}')">✎ Edit</button>
+                            <button class="btn btn-sm btn-danger" onclick="rejectQueueItem('${item.id}')">✕ Reject</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderEscalations(escs) {
+            const container = document.getElementById('escalations-list');
+
+            if (!escs || escs.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-icon">🛡️</div>
+                        <div class="empty-state-text">No active escalations</div>
+                    </div>`;
+                return;
+            }
+
+            container.innerHTML = escs.map(e => {
+                const contact = e.contact || {};
+                return `
+                    <div class="conv-item">
+                        <div class="conv-avatar ${e.severity === 'critical' ? 'family' : e.severity === 'high' ? 'friend' : 'stranger'}" style="width:36px;height:36px;font-size:14px">!</div>
+                        <div class="conv-info">
+                            <div class="conv-name">
+                                ${e.reason}
+                                <span class="badge badge-${e.severity === 'critical' ? 'red' : e.severity === 'high' ? 'yellow' : 'blue'}">${e.severity}</span>
+                            </div>
+                            <div class="conv-preview">${contact.name || contact.phone_number || 'Unknown'} — ${e.category || ''}</div>
+                        </div>
+                        <div class="conv-meta">
+                            <div class="conv-time">${formatTime(e.created_at)}</div>
+                            ${!e.resolved ? `<button class="btn btn-sm btn-secondary" onclick="resolveEscalation('${e.id}')">Resolve</button>` : '<span class="badge badge-green">Resolved</span>'}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderControlContacts(contactList) {
+            const tbody = document.getElementById('control-contacts-body');
+
+            if (!contactList || contactList.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--text-muted)">No contacts</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = contactList.slice(0, 50).map(c => `
+                <tr>
+                    <td style="font-weight:600">${c.name || c.phone_number}</td>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox" ${c.ai_enabled !== false ? 'checked' : ''} onchange="toggleContactAI('${c.id}', this.checked)">
+                            <span class="slider"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox" ${c.ghost_mode === true ? 'checked' : ''} onchange="toggleContactGhost('${c.id}', this.checked)">
+                            <span class="slider"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox" ${c.always_alert === true ? 'checked' : ''} onchange="toggleContactAlert('${c.id}', this.checked)">
+                            <span class="slider"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <select class="form-select" style="font-size:12px;padding:4px 8px" onchange="updateContactType('${c.id}', this.value)">
+                            <option value="family" ${c.relationship_type === 'family' ? 'selected' : ''}>Family</option>
+                            <option value="close_friend" ${c.relationship_type === 'close_friend' ? 'selected' : ''}>Close Friend</option>
+                            <option value="business" ${c.relationship_type === 'business' ? 'selected' : ''}>Business</option>
+                            <option value="acquaintance" ${c.relationship_type === 'acquaintance' ? 'selected' : ''}>Acquaintance</option>
+                            <option value="stranger" ${c.relationship_type === 'stranger' ? 'selected' : ''}>Stranger</option>
+                        </select>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function renderHourlyChart(data) {
+            const max = Math.max(...data, 1);
+            const hours = ['12AM', '1AM', '2AM', '3AM', '4AM', '5AM', '6AM', '7AM', '8AM', '9AM', '10AM', '11AM',
+                         '12PM', '1PM', '2PM', '3PM', '4PM', '5PM', '6PM', '7PM', '8PM', '9PM', '10PM', '11PM'];
+
+            const bars = data.map((val, i) => {
+                const height = (val / max) * 100;
+                const isPeak = val === max;
+                return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px">
+                    <div style="width:100%;background:${isPeak ? 'var(--accent-green)' : 'var(--accent-purple)'};height:${height}%;border-radius:3px 3px 0 0;min-height:2px;opacity:${0.4 + (height / 200)}"></div>
+                    <span style="font-size:9px;color:var(--text-muted)">${hours[i]}</span>
+                </div>`;
+            }).join('');
+
+            document.getElementById('hourly-chart').innerHTML = `<div style="display:flex;align-items:flex-end;height:100%;gap:3px">${bars}</div>`;
+        }
+
+        // ============================================
+        // ACTIONS
+        // ============================================
+        async function toggleAI() {
+            try {
+                const res = await fetch(`${API_BASE}/toggle-ai`, { method: 'POST' });
+                const data = await res.json();
+                updateMasterToggle(data.aiEnabled);
+                showToast(data.aiEnabled ? 'AI Enabled' : 'AI Disabled', data.aiEnabled ? 'success' : 'warning');
+            } catch (e) {
+                showToast('Failed to toggle AI', 'error');
+            }
+        }
+
+        function updateMasterToggle(enabled) {
+            const btn = document.getElementById('master-toggle');
+            const statusCard = document.getElementById('control-ai-status');
+
+            if (enabled) {
+                btn.classList.remove('off');
+                btn.classList.add('on');
+                btn.textContent = 'AI ON';
+                if (statusCard) statusCard.textContent = 'ON';
+            } else {
+                btn.classList.remove('on');
+                btn.classList.add('off');
+                btn.textContent = 'AI OFF';
+                if (statusCard) statusCard.textContent = 'OFF';
+            }
+        }
+
+        async function approveQueueItem(id) {
+            try {
+                await fetch(`${API_BASE}/queue/${id}/approve`, { method: 'POST' });
+                showToast('Message approved and sent', 'success');
+                loadQueue();
+            } catch (e) {
+                showToast('Failed to approve', 'error');
+            }
+        }
+
+        async function rejectQueueItem(id) {
+            try {
+                await fetch(`${API_BASE}/queue/${id}/reject`, { method: 'POST' });
+                showToast('Message rejected', 'warning');
+                loadQueue();
+            } catch (e) {
+                showToast('Failed to reject', 'error');
+            }
+        }
+
+        async function editQueueItem(id, currentText) {
+            const edited = prompt('Edit response:', decodeURIComponent(currentText));
+            if (!edited) return;
+
+            try {
+                await fetch(`${API_BASE}/queue/${id}/edit`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ response: edited })
+                });
+                showToast('Edited message sent', 'success');
+                loadQueue();
+            } catch (e) {
+                showToast('Failed to send', 'error');
+            }
+        }
+
+        async function resolveEscalation(id) {
+            const notes = prompt('Resolution notes:');
+            try {
+                await fetch(`${API_BASE}/escalations/${id}/resolve`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ notes })
+                });
+                showToast('Escalation resolved', 'success');
+                loadEscalations();
+            } catch (e) {
+                showToast('Failed to resolve', 'error');
+            }
+        }
+
+        async function toggleContactAI(id, enabled) {
+            try {
+                await fetch(`${API_BASE}/contacts/${id}`, {
+                    method: 'PATCH',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ ai_enabled: enabled })
+                });
+            } catch (e) {
+                showToast('Failed to update', 'error');
+            }
+        }
+
+        async function toggleContactGhost(id, enabled) {
+            try {
+                await fetch(`${API_BASE}/contacts/${id}`, {
+                    method: 'PATCH',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ ghost_mode: enabled })
+                });
+                showToast(enabled ? 'Ghost mode ON' : 'Ghost mode OFF', 'success');
+            } catch (e) {
+                showToast('Failed to update', 'error');
+            }
+        }
+
+        async function toggleContactAlert(id, enabled) {
+            try {
+                await fetch(`${API_BASE}/contacts/${id}`, {
+                    method: 'PATCH',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ always_alert: enabled })
+                });
+            } catch (e) {
+                showToast('Failed to update', 'error');
+            }
+        }
+
+        async function updateContactType(id, type) {
+            try {
+                await fetch(`${API_BASE}/contacts/${id}`, {
+                    method: 'PATCH',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ relationship_type: type })
+                });
+                showToast('Relationship updated', 'success');
+            } catch (e) {
+                showToast('Failed to update', 'error');
+            }
+        }
+
+        async function saveControlSettings() {
+            const delay = document.getElementById('delay-slider').value;
+            const confidence = document.getElementById('confidence-slider').value;
+            const length = document.getElementById('msg-length').value;
+
+            try {
+                await Promise.all([
+                    fetch(`${API_BASE}/settings/typing_delay_min`, {
+                        method: 'PATCH', headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ value: delay * 1000, type: 'number' })
+                    }),
+                    fetch(`${API_BASE}/settings/confidence_threshold`, {
+                        method: 'PATCH', headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ value: confidence / 100, type: 'number' })
+                    })
+                ]);
+                showToast('Settings saved', 'success');
+            } catch (e) {
+                showToast('Failed to save', 'error');
+            }
+        }
+
+        async function saveAllSettings() {
+            const data = {
+                name: document.getElementById('setting-name').value,
+                auto_archive_days: parseInt(document.getElementById('setting-archive').value),
+                negotiation_budget_threshold: parseInt(document.getElementById('setting-budget').value),
+                cost_limit_daily_usd: parseFloat(document.getElementById('setting-cost-limit').value),
+                self_reveal_default: document.getElementById('setting-reveal').checked,
+                emergency_alert: document.getElementById('setting-emergency').checked,
+                cost_tracking_enabled: document.getElementById('setting-cost-tracking').checked
+            };
+
+            try {
+                await Promise.all(Object.entries(data).map(([key, value]) =>
+                    fetch(`${API_BASE}/settings/${key}`, {
+                        method: 'PATCH',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ value, type: typeof value === 'boolean' ? 'boolean' : typeof value === 'number' ? 'number' : 'string' })
+                    })
+                ));
+                showToast('All settings saved', 'success');
+            } catch (e) {
+                showToast('Failed to save settings', 'error');
+            }
+        }
+
+        // ============================================
+        // CHAT
+        // ============================================
+        async function openChat(contactId, name, phone) {
+            currentChatContact = { id: contactId, name, phone };
+            document.getElementById('chat-name').textContent = name || 'Unknown';
+            document.getElementById('chat-phone').textContent = phone;
+            document.getElementById('chat-avatar').textContent = (name || '?').substring(0, 2).toUpperCase();
+
+            // Load messages
+            try {
+                const res = await fetch(`${API_BASE}/messages?contact_id=${contactId}&limit=50`);
+                const data = await res.json();
+                renderChatMessages(data.messages || []);
+            } catch (e) {
+                console.error('Load chat messages error:', e);
+            }
+
+            document.getElementById('chat-modal').classList.add('active');
+        }
+
+        function renderChatMessages(messages) {
+            const container = document.getElementById('chat-messages');
+            container.innerHTML = messages.reverse().map(m => `
+                <div class="chat-msg ${m.direction}">
+                    <div>${escapeHtml(m.content)}</div>
+                    <div class="chat-msg-time">${formatTime(m.created_at)} ${m.ai_generated ? '🤖' : ''}</div>
+                </div>
+            `).join('');
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function closeChat() {
+            document.getElementById('chat-modal').classList.remove('active');
+            currentChatContact = null;
+        }
+
+        async function sendChatMessage() {
+            if (!currentChatContact) return;
+            const input = document.getElementById('chat-input');
+            const message = input.value.trim();
+            if (!message) return;
+
+            input.value = '';
+
+            try {
+                await fetch(`${API_BASE}/send`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ phone: currentChatContact.phone, message })
+                });
+
+                // Add to chat
+                const container = document.getElementById('chat-messages');
+                container.innerHTML += `
+                    <div class="chat-msg outbound">
+                        <div>${escapeHtml(message)}</div>
+                        <div class="chat-msg-time">Just now</div>
+                    </div>
+                `;
+                container.scrollTop = container.scrollHeight;
+            } catch (e) {
+                showToast('Failed to send message', 'error');
+            }
+        }
+
+        // ============================================
+        // REALTIME HANDLERS
+        // ============================================
+        function handleRealtimeMessage(data) {
+            // Update conversations list
+            loadLiveFeed();
+
+            // If chat is open for this contact, add message
+            if (currentChatContact && data.contact?.id === currentChatContact.id) {
+                const container = document.getElementById('chat-messages');
+                container.innerHTML += `
+                    <div class="chat-msg ${data.direction}">
+                        <div>${escapeHtml(data.message?.content || '')}</div>
+                        <div class="chat-msg-time">Just now ${data.aiHandled ? '🤖' : ''}</div>
+                    </div>
+                `;
+                container.scrollTop = container.scrollHeight;
+            }
+        }
+
+        function handleRealtimeEscalation(data) {
+            updateBadge('esc-badge', parseInt(document.getElementById('esc-badge')?.textContent || 0) + 1);
+            showToast(`Escalation: ${data.escalation?.reason || 'Unknown'}`, 'error');
+            if (currentTab === 'escalations') loadEscalations();
+        }
+
+        function handleRealtimeQueue(data) {
+            updateBadge('queue-badge', parseInt(document.getElementById('queue-badge')?.textContent || 0) + 1);
+            if (currentTab === 'queue') loadQueue();
+        }
+
+        // ============================================
+        // HELPERS
+        // ============================================
+        function updateStatusDot(status) {
+            const dot = document.getElementById('status-dot');
+            const text = document.getElementById('status-text');
+
+            dot.className = 'status-dot ' + status;
+            if (status === 'online') {
+                dot.classList.add('pulse');
+                text.textContent = 'Connected';
+            } else if (status === 'warning') {
+                text.textContent = 'Connecting...';
+            } else {
+                text.textContent = 'Disconnected';
+            }
+        }
+
+        function updateConnectionStatus(status, message) {
+            if (status === 'connected') {
+                updateStatusDot('online');
+                document.getElementById('qr-card').style.display = 'none';
+            } else if (status === 'waiting_for_scan') {
+                updateStatusDot('warning');
+                document.getElementById('qr-card').style.display = 'block';
+            } else {
+                updateStatusDot('offline');
+            }
+        }
+
+        function showQRCode(qr) {
+            if (qr) {
+                document.getElementById('qr-display').innerHTML = `<img src="${qr}" alt="QR Code">`;
+                document.getElementById('qr-card').style.display = 'block';
+            }
+        }
+
+        async function checkQRCode() {
+            try {
+                const res = await fetch('/api/qr');
+                const data = await res.json();
+                if (data.hasQr) showQRCode(data.qr);
+                else if (data.status === 'connected') {
+                    document.getElementById('qr-card').style.display = 'none';
+                    updateStatusDot('online');
+                }
+            } catch (e) {}
+        }
+
+        async function checkStatus() {
+            try {
+                const res = await fetch('/api/status');
+                const data = await res.json();
+                updateConnectionStatus(data.whatsapp);
+                updateMasterToggle(data.aiEnabled);
+            } catch (e) {}
+        }
+
+        function updateMessageStats(messages) {
+            const inbound = messages.filter(m => m.direction === 'inbound').length;
+            const outbound = messages.filter(m => m.direction === 'outbound').length;
+            const aiHandled = messages.filter(m => m.ai_generated).length;
+
+            document.getElementById('stat-messages').textContent = inbound;
+        }
+
+        function updateStats(stats) {
+            if (stats) {
+                document.getElementById('stat-messages').textContent = stats.messagesReceived || 0;
+            }
+        }
+
+        function updateBadge(id, count) {
+            const badge = document.getElementById(id);
+            if (!badge) return;
+            badge.textContent = count;
+            badge.style.display = count > 0 ? 'block' : 'none';
+        }
+
+        function formatTime(iso) {
+            if (!iso) return 'Never';
+            const date = new Date(iso);
+            const now = new Date();
+            const diff = now - date;
+
+            if (diff < 60000) return 'Just now';
+            if (diff < 3600000) return Math.floor(diff / 60000) + 'm ago';
+            if (diff < 86400000) return Math.floor(diff / 3600000) + 'h ago';
+            if (diff < 604800000) return Math.floor(diff / 86400000) + 'd ago';
+
+            return date.toLocaleDateString();
+        }
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function showToast(message, type = 'info') {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+            toast.innerHTML = `
+                <span>${type === 'success' ? '✓' : type === 'error' ? '✕' : type === 'warning' ? '⚠' : 'ℹ'}</span>
+                <span>${message}</span>
+            `;
+            container.appendChild(toast);
+
+            setTimeout(() => {
+                toast.style.animation = 'toastOut 0.3s ease';
+                setTimeout(() => toast.remove(), 300);
+            }, 4000);
+        }
+
+        function updateDelayLabel(val) {
+            document.getElementById('delay-label').textContent = val + 's';
+        }
+
+        function updateConfidenceLabel(val) {
+            const label = val >= 80 ? 'Conservative' : val >= 50 ? 'Balanced' : 'Aggressive';
+            document.getElementById('confidence-label').textContent = val + '% — ' + label;
+        }
+
+        function filterControlContacts(query) {
+            const rows = document.querySelectorAll('#control-contacts-body tr');
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                row.style.display = text.includes(query.toLowerCase()) ? '' : 'none';
+            });
+        }
+
+        function editContact(id) {
+            // Could open modal with full contact editor
+            showToast('Contact editor coming soon', 'warning');
+        }
+
+        function exportData() {
+            showToast('Export started...', 'success');
+            // Implementation would fetch all data and create download
+        }
+
+        function resetSettings() {
+            if (confirm('Reset all settings to defaults?')) {
+                showToast('Settings reset', 'success');
+            }
+        }
+
+        function refreshData() {
+            loadInitialData();
+            showToast('Refreshed', 'success');
+        }
+
+        function showNotifications() {
+            showToast('No new notifications', 'info');
+        }
+
+        // Close modal on overlay click
+        document.getElementById('chat-modal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('chat-modal')) closeChat();
+        });
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeChat();
+            }
+        });
+
+        // Global search
+        document.getElementById('global-search').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            if (currentTab === 'contacts') {
+                filterControlContacts(query);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+# ============================================
+# DAVID OS — Git Ignore
+# ============================================
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# WhatsApp Session
+.david-os-session/
+.david-os-session-*/
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+*.sqlite
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Build
+dist/
+build/
+coverage/
+
+# Render
+render.yaml.bak
+
+# Temporary
+tmp/
+temp/
+*.tmp

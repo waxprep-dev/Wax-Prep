@@ -1,0 +1,65 @@
+services:
+  - type: web
+    name: david-os
+    env: node
+    plan: standard
+    buildCommand: npm install && npm run lint
+    startCommand: node server.js
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: GROQ_API_KEY
+        sync: false
+      - key: SUPABASE_URL
+        value: https://natphecmqvgvipeyrtjn.supabase.co
+      -key: SUPABASE_SERVICE_KEY
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: RENDER_API_KEY
+        sync: false
+      - key: WA_SESSION_NAME
+        value: david-os-prod
+      - key: TIMEZONE
+        value: Africa/Lagos
+      - key: AI_ENABLED
+        value: "true"
+    disk:
+      name: whatsapp-session
+      mountPath: /opt/render/project/src/.wwebjs_auth
+      sizeGB: 1
+    autoDeploy: true
+    numInstances: 1
+
+  - type: cron
+    name: david-os-cleanup
+    env: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: node scripts/cleanup.js
+    schedule: "0 2 * * *"
+    envVars:
+      - key: SUPABASE_URL
+        value: https://natphecmqvgvipeyrtjn.supabase.co
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
+
+  - type: cron
+    name: david-os-digest
+    env: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: node scripts/daily-digest.js
+    schedule: "0 8 * * *"
+    envVars:
+      - key: SUPABASE_URL
+        value: https://natphecmqvgvipeyrtjn.supabase.co
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
