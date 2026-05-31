@@ -1,1 +1,0 @@
-# Teaching strategies package
