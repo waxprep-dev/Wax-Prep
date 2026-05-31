@@ -83,84 +83,97 @@ const state = {
 // ============================================
 // WHATSAPP CLIENT
 // ============================================
-const client = new Client({
-    authStrategy: new LocalAuth({
-        dataPath: process.env.WA_SESSION_NAME || 'david-os-session'
-    }),
-    puppeteer: {
-        headless: true,
-        args: [
-            '--no-sandbox',
-            '--disable-setuid-sandbox',
-            '--disable-dev-shm-usage',
-            '--disable-accelerated-2d-canvas',
-            '--no-first-run',
-            '--no-zygote',
-            '--single-process',
-            '--disable-gpu',
-            '--disable-web-security'
-        ],
-        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined
-    },
-    qrMaxRetries: 5,
-    takeoverOnConflict: true,
-    takeoverTimeoutMs: 5000
-});
+let client = null;
+try {
+    client = new Client({
+        authStrategy: new LocalAuth({
+            dataPath: process.env.WA_SESSION_NAME || 'david-os-session'
+        }),
+        puppeteer: {
+            headless: true,
+            args: [
+                '--no-sandbox',
+                '--disable-setuid-sandbox',
+                '--disable-dev-shm-usage',
+                '--disable-gpu'
+            ],
+            executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined
+        },
+        qrMaxRetries: 5,
+        takeoverOnConflict: true,
+        takeoverTimeoutMs: 5000
+    });
+} catch (err) {
+    logger.error('WHATSAPP_CLIENT_INIT_FAILED', { error: err.message });
+    console.error('WhatsApp init failed:', err.message);
+    console.log('Server running without WhatsApp - dashboard and API still available');
+}
 
 // QR Code Handler
-client.on('qr', async (qr) => {
-    logger.info('WHATSAPP_QR_READY');
-    state.qrCode = qr;
-    
-    // Terminal QR
-    qrcodeTerminal.generate(qr, { small: true });
-    
-    // Generate data URL for dashboard
-    try {
-        const qrDataUrl = await qrcode.toDataURL(qr, { width: 400, margin: 2 });
-        state.qrDataUrl = qrDataUrl;
-    } catch (err) {
-        logger.error('QR_GENERATE_ERROR', { error: err.message });
-    }
-    
-    broadcast({ type: 'qr', qr: state.qrDataUrl });
-});
+if (client) {
+    client.on('qr', async (qr) => {
+        logger.info('WHATSAPP_QR_READY');
+        state.qrCode = qr;
+
+        // Terminal QR
+        qrcodeTerminal.generate(qr, { small: true });
+
+        // Generate data URL for dashboard
+        try {
+            const qrDataUrl = await qrcode.toDataURL(qr, { width: 400, margin: 2 });
+            state.qrDataUrl = qrDataUrl;
+        } catch (err) {
+            logger.error('QR_GENERATE_ERROR', { error: err.message });
+        }
+
+        broadcast({ type: 'qr', qr: state.qrDataUrl });
+    });
+}
 
 // Ready Handler
-client.on('ready', () => {
-    logger.info('WHATSAPP_READY');
-    state.whatsappReady = true;
-    state.qrCode = null;
-    state.qrDataUrl = null;
-    broadcast({ type: 'status', status: 'connected', message: 'WhatsApp connected!' });
-});
+if (client) {
+    client.on('ready', () => {
+        logger.info('WHATSAPP_READY');
+        state.whatsappReady = true;
+        state.qrCode = null;
+        state.qrDataUrl = null;
+        broadcast({ type: 'status', status: 'connected', message: 'WhatsApp connected!' });
+    });
+}
 
 // Auth Failure
-client.on('auth_failure', (msg) => {
-    logger.error('WHATSAPP_AUTH_FAILURE', { message: msg });
-    state.whatsappReady = false;
-    broadcast({ type: 'status', status: 'auth_failed', message: msg });
-});
+if (client) {
+    client.on('auth_failure', (msg) => {
+        logger.error('WHATSAPP_AUTH_FAILURE', { message: msg });
+        state.whatsappReady = false;
+        broadcast({ type: 'status', status: 'auth_failed', message: msg });
+    });
+}
 
 // Disconnected
-client.on('disconnected', (reason) => {
-    logger.warn('WHATSAPP_DISCONNECTED', { reason });
-    state.whatsappReady = false;
-    broadcast({ type: 'status', status: 'disconnected', message: reason });
-    
-    // Auto-reconnect after 5 seconds
-    setTimeout(() => {
-        logger.info('WHATSAPP_RECONNECTING');
-        client.initialize().catch(err => {
-            logger.error('WHATSAPP_RECONNECT_ERROR', { error: err.message });
-        });
-    }, 5000);
-});
+if (client) {
+    client.on('disconnected', (reason) => {
+        logger.warn('WHATSAPP_DISCONNECTED', { reason });
+        state.whatsappReady = false;
+        broadcast({ type: 'status', status: 'disconnected', message: reason });
+
+        // Auto-reconnect after 5 seconds
+        setTimeout(() => {
+            logger.info('WHATSAPP_RECONNECTING');
+            if (client) {
+                client.initialize().catch(err => {
+                    logger.error('WHATSAPP_RECONNECT_ERROR', { error: err.message });
+                });
+            }
+        }, 5000);
+    });
+}
 
 // ============================================
 // MESSAGE HANDLER — THE CORE
 // ============================================
-client.on('message_create', async (msg) => {
+if (client) {
+    client.on('message_create', async (msg) => {
     // Only handle inbound messages
     if (msg.fromMe) {
         // Track David's manual replies for learning
@@ -373,40 +386,46 @@ client.on('message_create', async (msg) => {
             preview: (msg.body || '').substring(0, 100)
         });
     }
-});
+    });
+}
 
 // ============================================
 // MESSAGE SEND WITH DELAY (Human-like)
 // ============================================
 async function sendWithDelay(to, content, delayMs) {
+    if (!client) {
+        logger.warn('SEND_WITH_DELAY_NO_CLIENT');
+        return [];
+    }
+
     // Wait for typing delay
     if (delayMs > 0) {
         await new Promise(r => setTimeout(r, delayMs));
     }
-    
+
     // Simulate typing indicator
     const chat = await client.getChatById(to);
     await chat.sendStateTyping();
-    
+
     // Calculate typing duration based on message length
     const typingDuration = Math.min(content.length * 50, 3000); // 50ms per char, max 3s
     await new Promise(r => setTimeout(r, typingDuration));
-    
+
     // Stop typing and send
     await chat.clearState();
-    
+
     // Check if we should split into multiple messages
     const messages = silence.shouldSplitMessage(content);
-    
+
     for (let i = 0; i < messages.length; i++) {
         await client.sendMessage(to, messages[i]);
-        
+
         // Small gap between consecutive messages (like a real person)
         if (i < messages.length - 1) {
             await new Promise(r => setTimeout(r, 800 + Math.random() * 1200));
         }
     }
-    
+
     return messages;
 }
 
@@ -843,14 +862,18 @@ app.get('/api/voice-notes', async (req, res) => {
 app.post('/api/send', async (req, res) => {
     try {
         const { phone, message } = req.body;
-        
+
+        if (!client) {
+            return res.status(400).json({ error: 'WhatsApp client not initialized' });
+        }
+
         if (!state.whatsappReady) {
             return res.status(400).json({ error: 'WhatsApp not connected' });
         }
-        
+
         // Ensure proper format
         const formattedPhone = phone.includes('@c.us') ? phone : `${phone}@c.us`;
-        
+
         await client.sendMessage(formattedPhone, message);
         
         // Store in database
@@ -957,10 +980,12 @@ async function shutdown(signal) {
     }
     
     // Destroy WhatsApp client
-    try {
-        await client.destroy();
-    } catch (e) {
-        // Ignore
+    if (client) {
+        try {
+            await client.destroy();
+        } catch (e) {
+            // Ignore
+        }
     }
     
     process.exit(0);
@@ -986,11 +1011,15 @@ const server = app.listen(PORT, HOST, async () => {
     setupWebSocket(server);
     
     // Initialize WhatsApp
-    try {
-        await client.initialize();
-        logger.info('WHATSAPP_CLIENT_INITIALIZED');
-    } catch (error) {
-        logger.error('WHATSAPP_INIT_ERROR', { error: error.message });
+    if (client) {
+        try {
+            await client.initialize();
+            logger.info('WHATSAPP_CLIENT_INITIALIZED');
+        } catch (error) {
+            logger.error('WHATSAPP_INIT_ERROR', { error: error.message });
+        }
+    } else {
+        logger.info('WHATSAPP_SKIPPED');
     }
     
     logger.info('DAVID_OS_READY', { 
@@ -1000,4 +1029,4 @@ const server = app.listen(PORT, HOST, async () => {
     });
 });
 
-module.exports = { app, client, state, broadcast };
+module.e
