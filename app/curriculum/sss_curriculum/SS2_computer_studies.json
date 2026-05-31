@@ -1,0 +1,194 @@
+{
+  "subject_name": "Computer Studies",
+  "class_level": "SS2",
+  "exam_relevance": [
+    "WAEC",
+    "NECO"
+  ],
+  "description": "SS2 Computer Studies - Programming, database, networking, web development",
+  "waec_high_priority_topics": [
+    "Programming",
+    "Database",
+    "Networking",
+    "Web Development"
+  ],
+  "topics": [
+    {
+      "title": "Programming",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "BASIC Programming",
+          "concepts": [
+            "Variables",
+            "Control structures",
+            "Arrays",
+            "Functions"
+          ],
+          "learning_objectives": [
+            "Write BASIC programs"
+          ],
+          "common_misconceptions": [
+            "Programming is only for geniuses"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Database Management",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Database Concepts",
+          "concepts": [
+            "DBMS",
+            "Tables",
+            "Queries",
+            "Forms",
+            "Reports"
+          ],
+          "learning_objectives": [
+            "Create simple databases"
+          ],
+          "common_misconceptions": [
+            "Database is only for big companies"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Networking",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Computer Networks",
+          "concepts": [
+            "LAN, WAN",
+            "Network topology",
+            "Protocols",
+            "Network devices"
+          ],
+          "learning_objectives": [
+            "Explain network concepts"
+          ],
+          "common_misconceptions": [
+            "Internet and WWW are the same"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Web Development",
+      "term": 2,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Web Technologies",
+          "concepts": [
+            "HTML",
+            "CSS basics",
+            "Website structure",
+            "Web browsers"
+          ],
+          "learning_objectives": [
+            "Create simple web pages"
+          ],
+          "common_misconceptions": [
+            "Web development is only coding"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Computer Ethics and Security",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Cyber Security",
+          "concepts": [
+            "Viruses",
+            "Malware",
+            "Hacking",
+            "Prevention",
+            "Data protection"
+          ],
+          "learning_objectives": [
+            "Practice safe computing"
+          ],
+          "common_misconceptions": [
+            "Antivirus is enough protection"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Number Systems",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Binary, Octal, Hex",
+          "concepts": [
+            "Conversions",
+            "Binary arithmetic",
+            "Applications"
+          ],
+          "learning_objectives": [
+            "Convert between systems"
+          ],
+          "common_misconceptions": [
+            "Binary is only for computers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data Processing",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Processing Methods",
+          "concepts": [
+            "Manual",
+            "Mechanical",
+            "Electronic",
+            "Data processing cycle"
+          ],
+          "learning_objectives": [
+            "Explain data processing"
+          ],
+          "common_misconceptions": [
+            "Data and information are the same"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Computer Applications",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "ICT Applications",
+          "concepts": [
+            "Education",
+            "Business",
+            "Government",
+            "Healthcare"
+          ],
+          "learning_objectives": [
+            "Identify ICT applications"
+          ],
+          "common_misconceptions": [
+            "ICT is only for offices"
+          ]
+        }
+      ]
+    }
+  ]
+}

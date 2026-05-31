@@ -1,0 +1,252 @@
+{
+  "subject_name": "Further Mathematics",
+  "class_level": "SS1",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "Senior Secondary School 1 Further Mathematics - Pure mathematics, statistics, mechanics, and calculus",
+  "waec_high_priority_topics": [
+    "Complex Numbers",
+    "Matrices",
+    "Conic Sections",
+    "Differentiation"
+  ],
+  "topics": [
+    {
+      "title": "Sets and Binary Operations",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Advanced Set Theory",
+          "concepts": [
+            "Set operations",
+            "Venn diagrams (3 sets)",
+            "Binary operations",
+            "Properties of binary operations",
+            "Identity and inverse elements"
+          ],
+          "learning_objectives": [
+            "Solve complex set problems"
+          ],
+          "common_misconceptions": [
+            "Confusing identity with inverse"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Complex Numbers",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Algebra of Complex Numbers",
+          "concepts": [
+            "Definition of i",
+            "Operations on complex numbers",
+            "Argand diagram",
+            "Modulus and argument",
+            "De Moivre's theorem"
+          ],
+          "learning_objectives": [
+            "Perform operations on complex numbers"
+          ],
+          "common_misconceptions": [
+            "i = 1 or -1",
+            "Complex numbers are imaginary only"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Matrices",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Matrix Algebra",
+          "concepts": [
+            "Types of matrices",
+            "Matrix addition and subtraction",
+            "Scalar multiplication",
+            "Matrix multiplication",
+            "Determinants",
+            "Inverse matrices"
+          ],
+          "learning_objectives": [
+            "Find inverse of 2x2 and 3x3 matrices"
+          ],
+          "common_misconceptions": [
+            "Matrix multiplication is commutative",
+            "Det(A+B) = det(A)+det(B)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Conic Sections",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Parabola, Ellipse, Hyperbola",
+          "concepts": [
+            "Parabola (equation, focus, directrix)",
+            "Ellipse (equation, foci, eccentricity)",
+            "Hyperbola (equation, asymptotes)",
+            "General second degree equation"
+          ],
+          "learning_objectives": [
+            "Identify and sketch conic sections"
+          ],
+          "common_misconceptions": [
+            "Confusing ellipse with circle always"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Differentiation",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Differential Calculus",
+          "concepts": [
+            "Limit definition",
+            "Power rule",
+            "Product rule",
+            "Quotient rule",
+            "Chain rule",
+            "Applications (gradients, tangents, normals)"
+          ],
+          "learning_objectives": [
+            "Differentiate complex functions"
+          ],
+          "common_misconceptions": [
+            "d(uv) = du*dv",
+            "Forgetting chain rule for composite functions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Integration",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Integral Calculus",
+          "concepts": [
+            "Indefinite integrals",
+            "Definite integrals",
+            "Integration by substitution",
+            "Area under curves",
+            "Volume of revolution"
+          ],
+          "learning_objectives": [
+            "Evaluate definite integrals",
+            "Find areas and volumes"
+          ],
+          "common_misconceptions": [
+            "Forgetting constant of integration",
+            "Wrong limits for area"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mechanics - Statics",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Forces and Equilibrium",
+          "concepts": [
+            "Resolution of forces",
+            "Moments",
+            "Couples",
+            "Equilibrium conditions",
+            "Center of gravity"
+          ],
+          "learning_objectives": [
+            "Solve equilibrium problems"
+          ],
+          "common_misconceptions": [
+            "Equilibrium means no forces acting"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mechanics - Dynamics",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Motion and Forces",
+          "concepts": [
+            "Kinematics in 2D",
+            "Projectiles",
+            "Newton's laws applications",
+            "Work, energy, power",
+            "Impulse and momentum"
+          ],
+          "learning_objectives": [
+            "Solve projectile problems"
+          ],
+          "common_misconceptions": [
+            "Horizontal velocity changes in projectile motion"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistics",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Probability Distributions",
+          "concepts": [
+            "Binomial distribution",
+            "Poisson distribution",
+            "Normal distribution",
+            "Standard normal"
+          ],
+          "learning_objectives": [
+            "Calculate probabilities using distributions"
+          ],
+          "common_misconceptions": [
+            "Normal distribution always applies"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Permutations and Combinations",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Counting Techniques",
+          "concepts": [
+            "Factorial notation",
+            "Permutations",
+            "Combinations",
+            "Circular permutations"
+          ],
+          "learning_objectives": [
+            "Solve counting problems"
+          ],
+          "common_misconceptions": [
+            "Confusing permutations with combinations"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "subject_name": "Biology",
+  "class_level": "SS2",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "Senior Secondary School 2 Biology - Genetics, evolution, reproduction, coordination, biotechnology",
+  "waec_high_priority_topics": [
+    "Genetics",
+    "Evolution",
+    "Reproduction",
+    "Coordination",
+    "Biotechnology"
+  ],
+  "topics": [
+    {
+      "title": "Genetics",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Heredity",
+          "concepts": [
+            "Chromosomes and genes",
+            "DNA structure",
+            "RNA",
+            "Protein synthesis",
+            "Mendel's laws",
+            "Punnett squares",
+            "Sex determination",
+            "Genetic disorders"
+          ],
+          "learning_objectives": [
+            "Solve genetics problems"
+          ],
+          "common_misconceptions": [
+            "Acquired characteristics are inherited"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Evolution",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Theory of Evolution",
+          "concepts": [
+            "Lamarck's theory",
+            "Darwin's theory",
+            "Evidence of evolution",
+            "Natural selection",
+            "Adaptation"
+          ],
+          "learning_objectives": [
+            "Explain mechanisms of evolution"
+          ],
+          "common_misconceptions": [
+            "Evolution means humans came from monkeys"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Reproduction in Plants",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Plant Reproduction",
+          "concepts": [
+            "Sexual reproduction",
+            "Asexual reproduction",
+            "Parts of flower",
+            "Pollination",
+            "Fertilization",
+            "Seed and fruit formation"
+          ],
+          "learning_objectives": [
+            "Describe plant reproduction"
+          ],
+          "common_misconceptions": [
+            "All plants reproduce sexually"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Reproduction in Humans",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Human Reproductive System",
+          "concepts": [
+            "Male reproductive system",
+            "Female reproductive system",
+            "Menstrual cycle",
+            "Fertilization",
+            "Pregnancy and childbirth",
+            "Family planning"
+          ],
+          "learning_objectives": [
+            "Explain human reproduction"
+          ],
+          "common_misconceptions": [
+            "Menstruation means pregnancy is impossible"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Coordination and Control",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Nervous and Endocrine Systems",
+          "concepts": [
+            "Central nervous system",
+            "Peripheral nervous system",
+            "Reflex action",
+            "Sense organs",
+            "Endocrine glands",
+            "Hormones"
+          ],
+          "learning_objectives": [
+            "Explain coordination systems"
+          ],
+          "common_misconceptions": [
+            "Nerves and hormones are the same"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Regulation of Internal Environment",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Homeostasis",
+          "concepts": [
+            "Temperature regulation",
+            "Osmoregulation",
+            "Blood sugar regulation",
+            "Excretion",
+            "Kidney function"
+          ],
+          "learning_objectives": [
+            "Explain homeostatic mechanisms"
+          ],
+          "common_misconceptions": [
+            "Sweating cools because water is cold"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Skeletal System",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Support and Movement",
+          "concepts": [
+            "Types of skeleton",
+            "Bones of the body",
+            "Joints",
+            "Muscles",
+            "Movement"
+          ],
+          "learning_objectives": [
+            "Describe skeletal system"
+          ],
+          "common_misconceptions": [
+            "Bones are dead structures"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Microorganisms",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Bacteria, Viruses, Fungi",
+          "concepts": [
+            "Structure and classification",
+            "Beneficial microorganisms",
+            "Pathogens",
+            "Immunity",
+            "Vaccination"
+          ],
+          "learning_objectives": [
+            "Explain role of microorganisms"
+          ],
+          "common_misconceptions": [
+            "All bacteria are harmful"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Biotechnology",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Applied Biology",
+          "concepts": [
+            "Fermentation",
+            "Genetic engineering",
+            "Tissue culture",
+            "Applications in agriculture and medicine"
+          ],
+          "learning_objectives": [
+            "Describe biotechnological applications"
+          ],
+          "common_misconceptions": [
+            "Genetic engineering is always dangerous"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Conservation of Natural Resources",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Environmental Conservation",
+          "learning_objectives": [
+            "Suggest conservation strategies"
+          ],
+          "common_misconceptions": [
+            "Conservation means not using"
+          ],
+          "concepts": [
+            "Renewable resources",
+            "Non-renewable resources",
+            "Pollution",
+            "Conservation methods"
+          ]
+        }
+      ]
+    }
+  ]
+}

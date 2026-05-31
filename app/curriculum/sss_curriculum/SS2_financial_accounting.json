@@ -1,0 +1,239 @@
+{
+  "subject_name": "Financial Accounting",
+  "class_level": "SS2",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "SS2 Financial Accounting - Company accounts, ratio analysis, departmental accounts, public sector accounting",
+  "waec_high_priority_topics": [
+    "Company Accounts",
+    "Ratio Analysis",
+    "Departmental Accounts",
+    "Public Sector Accounting"
+  ],
+  "topics": [
+    {
+      "title": "Company Accounts",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Limited Companies",
+          "concepts": [
+            "Formation",
+            "Share capital",
+            "Debentures",
+            "Final accounts",
+            "Appropriation account"
+          ],
+          "learning_objectives": [
+            "Prepare company accounts"
+          ],
+          "common_misconceptions": [
+            "Shares and debentures are same"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ratio Analysis",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Accounting Ratios",
+          "concepts": [
+            "Profitability ratios",
+            "Liquidity ratios",
+            "Efficiency ratios",
+            "Investment ratios",
+            "Interpretation"
+          ],
+          "learning_objectives": [
+            "Calculate and interpret ratios"
+          ],
+          "common_misconceptions": [
+            "High ratio is always good"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Departmental Accounts",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Department Accounting",
+          "concepts": [
+            "Meaning",
+            "Preparation",
+            "Inter-departmental transfers",
+            "Apportionment of expenses"
+          ],
+          "learning_objectives": [
+            "Prepare departmental accounts"
+          ],
+          "common_misconceptions": [
+            "All expenses are apportioned equally"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Branch Accounts",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Branch Accounting",
+          "concepts": [
+            "Types of branches",
+            "Goods sent to branch",
+            "Branch stock adjustment",
+            "Independent branches"
+          ],
+          "learning_objectives": [
+            "Prepare branch accounts"
+          ],
+          "common_misconceptions": [
+            "Branch and head office records are same"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hire Purchase",
+      "term": 2,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Hire Purchase Accounting",
+          "concepts": [
+            "Meaning",
+            "Accounting treatment",
+            "Goods sold on HP",
+            "Goods bought on HP"
+          ],
+          "learning_objectives": [
+            "Account for hire purchase"
+          ],
+          "common_misconceptions": [
+            "Hire purchase is same as installment"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Partnership Dissolution",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Dissolution",
+          "concepts": [
+            "Circumstances",
+            "Realization account",
+            "Piecemeal distribution",
+            "Garner vs Murray"
+          ],
+          "learning_objectives": [
+            "Account for partnership dissolution"
+          ],
+          "common_misconceptions": [
+            "Garner vs Murray always applies"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Public Sector Accounting",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Government Accounting",
+          "concepts": [
+            "Government budget",
+            "Revenue and expenditure",
+            "Treasury single account",
+            "Final accounts of government"
+          ],
+          "learning_objectives": [
+            "Explain public sector accounting"
+          ],
+          "common_misconceptions": [
+            "Government accounting is same as business"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cash Flow Statement",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Cash Flow",
+          "concepts": [
+            "Operating activities",
+            "Investing activities",
+            "Financing activities",
+            "Preparation"
+          ],
+          "learning_objectives": [
+            "Prepare cash flow statements"
+          ],
+          "common_misconceptions": [
+            "Cash flow = profit"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Incomplete Records",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Single Entry",
+          "concepts": [
+            "Statement of affairs",
+            "Conversion to double entry",
+            "Calculation of profit"
+          ],
+          "learning_objectives": [
+            "Convert single to double entry"
+          ],
+          "common_misconceptions": [
+            "Single entry means one entry"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Introduction to Cost Accounting",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Cost Concepts",
+          "concepts": [
+            "Fixed and variable costs",
+            "Direct and indirect costs",
+            "Cost sheets",
+            "Break-even analysis"
+          ],
+          "learning_objectives": [
+            "Classify costs"
+          ],
+          "common_misconceptions": [
+            "All costs are variable"
+          ]
+        }
+      ]
+    }
+  ]
+}

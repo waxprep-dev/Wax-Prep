@@ -1,0 +1,184 @@
+{
+  "subject_name": "Economics",
+  "class_level": "SS3",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "Senior Secondary School 3 Economics - SSCE preparation and comprehensive revision",
+  "waec_high_priority_topics": [
+    "Microeconomics Revision",
+    "Macroeconomics Revision",
+    "International Economics",
+    "Development Economics"
+  ],
+  "topics": [
+    {
+      "title": "Microeconomics Revision",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Microeconomics Revision",
+          "concepts": [
+            "Demand and supply",
+            "Elasticity",
+            "Market structures"
+          ],
+          "learning_objectives": [
+            "Understand microeconomics revision"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Macroeconomics Revision",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Macroeconomics Revision",
+          "concepts": [
+            "National income",
+            "Money and banking",
+            "Inflation"
+          ],
+          "learning_objectives": [
+            "Understand macroeconomics revision"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Economics",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "International Economics",
+          "concepts": [
+            "Trade",
+            "Balance of payments",
+            "Exchange rates"
+          ],
+          "learning_objectives": [
+            "Understand international economics"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Development Economics",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Development Economics",
+          "concepts": [
+            "Economic growth",
+            "Development planning",
+            "Poverty reduction"
+          ],
+          "learning_objectives": [
+            "Understand development economics"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nigerian Economy",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Nigerian Economy",
+          "concepts": [
+            "Structure",
+            "Challenges",
+            "Policies"
+          ],
+          "learning_objectives": [
+            "Understand nigerian economy"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Econometrics",
+      "term": 2,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Econometrics",
+          "concepts": [
+            "Data analysis",
+            "Graphs",
+            "Tables"
+          ],
+          "learning_objectives": [
+            "Understand econometrics"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WAEC/NECO Revision",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "WAEC/NECO Revision",
+          "concepts": [
+            "Past questions",
+            "Calculation practice"
+          ],
+          "learning_objectives": [
+            "Understand waec/neco revision"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "JAMB Economics",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "JAMB Economics",
+          "concepts": [
+            "UTME format",
+            "Common topics"
+          ],
+          "learning_objectives": [
+            "Understand jamb economics"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "subject_name": "English Language",
+  "class_level": "SS3",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "Senior Secondary School 3 English - SSCE/JAMB preparation: comprehensive revision and exam techniques",
+  "waec_high_priority_topics": [
+    "Essay Writing",
+    "Comprehension",
+    "Summary",
+    "Lexis and Structure",
+    "Oral English"
+  ],
+  "topics": [
+    {
+      "title": "Essay Writing Mastery",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "All Essay Types",
+          "concepts": [
+            "Argumentative",
+            "Descriptive",
+            "Narrative",
+            "Expository",
+            "Letter writing",
+            "Speech writing"
+          ],
+          "learning_objectives": [
+            "Write excellent essays"
+          ],
+          "common_misconceptions": [
+            "One essay type fits all questions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Comprehension Strategies",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Reading Techniques",
+          "concepts": [
+            "Skimming and scanning",
+            "Contextual clues",
+            "Inference",
+            "Critical analysis"
+          ],
+          "learning_objectives": [
+            "Maximize comprehension scores"
+          ],
+          "common_misconceptions": [
+            "Copying from text works"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Summary Techniques",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Summary Skills",
+          "concepts": [
+            "Identifying main points",
+            "Paraphrasing",
+            "Word limit discipline"
+          ],
+          "learning_objectives": [
+            "Write perfect summaries"
+          ],
+          "common_misconceptions": [
+            "Including examples helps"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lexis and Structure",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Grammar and Vocabulary",
+          "concepts": [
+            "Tenses",
+            "Reported speech",
+            "Active/passive",
+            "Idioms",
+            "Word formation"
+          ],
+          "learning_objectives": [
+            "Master grammar rules"
+          ],
+          "common_misconceptions": [
+            "Nigerian English is acceptable in exams"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Oral English",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Phonetics Practice",
+          "concepts": [
+            "Vowel sounds",
+            "Consonant clusters",
+            "Stress patterns",
+            "Rhymes"
+          ],
+          "learning_objectives": [
+            "Score high in oral English"
+          ],
+          "common_misconceptions": [
+            "Oral English doesn't matter much"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Literature",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Set Texts",
+          "concepts": [
+            "Prose analysis",
+            "Poetry analysis",
+            "Drama analysis",
+            "Literary devices"
+          ],
+          "learning_objectives": [
+            "Analyze set texts thoroughly"
+          ],
+          "common_misconceptions": [
+            "Reading summary is enough"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WAEC Practice",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Past Questions",
+          "concepts": [
+            "Common question patterns",
+            "Marking scheme",
+            "Time management"
+          ],
+          "learning_objectives": [
+            "Pass WAEC English"
+          ],
+          "common_misconceptions": [
+            "Objective is easier than theory"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "NECO Practice",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "NECO Format",
+          "concepts": [
+            "NECO vs WAEC differences",
+            "Common NECO topics"
+          ],
+          "learning_objectives": [
+            "Pass NECO English"
+          ],
+          "common_misconceptions": [
+            "NECO is easier than WAEC"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "JAMB Use of English",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "UTME English",
+          "concepts": [
+            "Comprehension passages",
+            "Lexis and structure",
+            "Oral forms"
+          ],
+          "learning_objectives": [
+            "Score high in JAMB English"
+          ],
+          "common_misconceptions": [
+            "JAMB English is simple"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Final Revision",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Exam Preparation",
+          "concepts": [
+            "Mock exams",
+            "Error analysis",
+            "Exam strategies"
+          ],
+          "learning_objectives": [
+            "Be fully prepared"
+          ],
+          "common_misconceptions": [
+            "Last-minute cramming works"
+          ]
+        }
+      ]
+    }
+  ]
+}

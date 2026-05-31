@@ -1,0 +1,196 @@
+{
+  "subject_name": "Christian Religious Studies",
+  "class_level": "SS2",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "SS2 CRS - Synoptic gospels, acts of the apostles, pauline epistles, christian ethics",
+  "waec_high_priority_topics": [
+    "Synoptic Gospels",
+    "Acts",
+    "Pauline Epistles",
+    "Christian Ethics"
+  ],
+  "topics": [
+    {
+      "title": "The Synoptic Gospels",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Life of Jesus",
+          "concepts": [
+            "Baptism and temptation",
+            "Miracles",
+            "Parables",
+            "Transfiguration",
+            "Triumphal entry"
+          ],
+          "learning_objectives": [
+            "Analyze synoptic accounts"
+          ],
+          "common_misconceptions": [
+            "The gospels are identical"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Death and Resurrection",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Passion and Resurrection",
+          "concepts": [
+            "Last Supper",
+            "Trial and crucifixion",
+            "Resurrection appearances",
+            "Ascension"
+          ],
+          "learning_objectives": [
+            "Explain significance of resurrection"
+          ],
+          "common_misconceptions": [
+            "Jesus was crucified on Friday"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Acts of the Apostles",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Early Church",
+          "concepts": [
+            "Pentecost",
+            "Peter's ministry",
+            "Stephen and Philip",
+            "Paul's conversion"
+          ],
+          "learning_objectives": [
+            "Trace early church history"
+          ],
+          "common_misconceptions": [
+            "Paul founded Christianity"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Paul's Missionary Journeys",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Paul's Travels",
+          "concepts": [
+            "First journey",
+            "Second journey",
+            "Third journey",
+            "Journey to Rome"
+          ],
+          "learning_objectives": [
+            "Describe Paul's journeys"
+          ],
+          "common_misconceptions": [
+            "Paul worked alone"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pauline Epistles",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Letters of Paul",
+          "concepts": [
+            "Romans",
+            "Corinthians",
+            "Galatians",
+            "Philippians",
+            "Thessalonians"
+          ],
+          "learning_objectives": [
+            "Explain Paul's teachings"
+          ],
+          "common_misconceptions": [
+            "Paul contradicted Jesus"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Christian Ethics",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Moral Teachings",
+          "concepts": [
+            "Love and forgiveness",
+            "Marriage and family",
+            "Work and leisure",
+            "Wealth and poverty"
+          ],
+          "learning_objectives": [
+            "Apply Christian ethics"
+          ],
+          "common_misconceptions": [
+            "Christian ethics are only for Christians"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Christian Social Responsibility",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Social Issues",
+          "concepts": [
+            "Justice and fairness",
+            "Human rights",
+            "Environmental stewardship",
+            "Peace and reconciliation"
+          ],
+          "learning_objectives": [
+            "Address social issues"
+          ],
+          "common_misconceptions": [
+            "Church should not be involved in politics"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "African Traditional Religion",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Comparison",
+          "concepts": [
+            "Beliefs",
+            "Practices",
+            "Similarities with Christianity",
+            "Differences"
+          ],
+          "learning_objectives": [
+            "Compare religious traditions"
+          ],
+          "common_misconceptions": [
+            "ATR is evil"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "subject_name": "History",
+  "class_level": "SS2",
+  "exam_relevance": [
+    "WAEC",
+    "NECO"
+  ],
+  "description": "SS2 History - West African history, European history, world history, historiography",
+  "waec_high_priority_topics": [
+    "West African History",
+    "European History",
+    "World History"
+  ],
+  "topics": [
+    {
+      "title": "West African History",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "West African Kingdoms",
+          "concepts": [
+            "Ghana empire",
+            "Mali empire",
+            "Songhai empire",
+            "Trans-Saharan trade"
+          ],
+          "learning_objectives": [
+            "Describe West African empires"
+          ],
+          "common_misconceptions": [
+            "Ghana empire is modern Ghana"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "European History",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Modern Europe",
+          "concepts": [
+            "Renaissance",
+            "Reformation",
+            "Industrial Revolution",
+            "French Revolution"
+          ],
+          "learning_objectives": [
+            "Explain European transformations"
+          ],
+          "common_misconceptions": [
+            "Industrial Revolution was only in Britain"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "World Wars",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Global Conflicts",
+          "concepts": [
+            "Causes of WWI",
+            "Effects of WWI",
+            "Causes of WWII",
+            "Effects of WWII",
+            "Cold War"
+          ],
+          "learning_objectives": [
+            "Analyze causes and effects of wars"
+          ],
+          "common_misconceptions": [
+            "WWII started because of WWI only"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nationalism in Africa",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Independence Movements",
+          "concepts": [
+            "Pan-Africanism",
+            "Negritude",
+            "Independence movements",
+            "Challenges of independence"
+          ],
+          "learning_objectives": [
+            "Trace African nationalism"
+          ],
+          "common_misconceptions": [
+            "Independence was given freely"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nigeria Since Independence",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Post-Colonial Nigeria",
+          "concepts": [
+            "First republic",
+            "Civil war",
+            "Military rule",
+            "Fourth republic"
+          ],
+          "learning_objectives": [
+            "Analyze Nigeria's history"
+          ],
+          "common_misconceptions": [
+            "Military rule was better"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Contemporary World Issues",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Global Issues",
+          "concepts": [
+            "Globalization",
+            "Terrorism",
+            "Climate change",
+            "International organizations"
+          ],
+          "learning_objectives": [
+            "Evaluate global issues"
+          ],
+          "common_misconceptions": [
+            "Globalization is only about trade"
+          ]
+        }
+      ]
+    }
+  ]
+}

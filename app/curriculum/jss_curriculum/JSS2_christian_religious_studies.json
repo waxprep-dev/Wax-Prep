@@ -1,0 +1,147 @@
+{
+  "subject_name": "Christian Religious Studies",
+  "class_level": "JSS2",
+  "exam_relevance": [
+    "BECE",
+    "Junior WAEC"
+  ],
+  "description": "Junior Secondary School 2 CRS - Old Testament prophets, New Testament teachings",
+  "waec_high_priority_topics": [],
+  "topics": [
+    {
+      "title": "Joshua and the Conquest",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Leadership and Obedience",
+          "concepts": [
+            "Joshua's leadership",
+            "Crossing the Jordan",
+            "Fall of Jericho",
+            "Division of Canaan"
+          ],
+          "learning_objectives": [
+            "Describe conquest of Canaan"
+          ],
+          "common_misconceptions": [
+            "Thinking all battles were justified"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Judges and Kings",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Leaders of Israel",
+          "concepts": [
+            "Deborah",
+            "Gideon",
+            "Samson",
+            "Samuel",
+            "Saul's kingship"
+          ],
+          "learning_objectives": [
+            "Describe roles of judges"
+          ],
+          "common_misconceptions": [
+            "Confusing judges with court judges"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "David and Solomon",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "United Kingdom",
+          "concepts": [
+            "David's reign",
+            "Solomon's wisdom",
+            "Building the temple",
+            "Division of kingdom"
+          ],
+          "learning_objectives": [
+            "Compare David and Solomon"
+          ],
+          "common_misconceptions": [
+            "Thinking Solomon was always wise"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prophets",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Major Prophets",
+          "concepts": [
+            "Isaiah",
+            "Jeremiah",
+            "Ezekiel",
+            "Messages of hope",
+            "Messages of judgment"
+          ],
+          "learning_objectives": [
+            "Explain prophetic messages"
+          ],
+          "common_misconceptions": [
+            "Thinking prophets only predict"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Parables of Jesus",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Teaching Through Stories",
+          "concepts": [
+            "Good Samaritan",
+            "Prodigal Son",
+            "Sower",
+            "Mustard seed",
+            "Lost sheep"
+          ],
+          "learning_objectives": [
+            "Explain meanings of parables"
+          ],
+          "common_misconceptions": [
+            "Taking parables literally only"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Early Church",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Spread of Christianity",
+          "concepts": [
+            "Pentecost",
+            "Peter's ministry",
+            "Paul's conversion",
+            "Missionary journeys"
+          ],
+          "learning_objectives": [
+            "Trace spread of early church"
+          ],
+          "common_misconceptions": [
+            "Thinking church started with Paul"
+          ]
+        }
+      ]
+    }
+  ]
+}

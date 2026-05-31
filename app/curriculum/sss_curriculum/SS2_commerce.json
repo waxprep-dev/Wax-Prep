@@ -1,0 +1,236 @@
+{
+  "subject_name": "Commerce",
+  "class_level": "SS2",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "SS2 Commerce - Business organizations, finance, transport, marketing, consumer protection",
+  "waec_high_priority_topics": [
+    "Business Units",
+    "Finance",
+    "Transport",
+    "Marketing"
+  ],
+  "topics": [
+    {
+      "title": "Business Units",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Forms of Business",
+          "concepts": [
+            "Sole trader",
+            "Partnership",
+            "Limited company",
+            "Public corporation",
+            "Cooperative"
+          ],
+          "learning_objectives": [
+            "Compare business units"
+          ],
+          "common_misconceptions": [
+            "Sole trader has no employees"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Finance",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Business Finance",
+          "concepts": [
+            "Sources (shares, debentures, loans)",
+            "Stock exchange",
+            "Capital",
+            "Credit"
+          ],
+          "learning_objectives": [
+            "Identify finance sources"
+          ],
+          "common_misconceptions": [
+            "Shares and debentures are same"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Transport",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Transportation",
+          "concepts": [
+            "Modes",
+            "Factors affecting choice",
+            "Documents (waybill, bill of lading)"
+          ],
+          "learning_objectives": [
+            "Select transport modes"
+          ],
+          "common_misconceptions": [
+            "Fastest is always best"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Marketing",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Marketing Mix",
+          "concepts": [
+            "Product",
+            "Price",
+            "Place",
+            "Promotion",
+            "Market research"
+          ],
+          "learning_objectives": [
+            "Apply marketing concepts"
+          ],
+          "common_misconceptions": [
+            "Marketing is only advertising"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Consumer Protection",
+      "term": 2,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Consumer Rights",
+          "concepts": [
+            "Rights",
+            "Agencies (CPC, SON, NAFDAC)",
+            "Redress"
+          ],
+          "learning_objectives": [
+            "Explain consumer protection"
+          ],
+          "common_misconceptions": [
+            "Consumer rights are unlimited"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Insurance",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Insurance Principles",
+          "concepts": [
+            "Principles (utmost good faith, indemnity, etc.)",
+            "Types (life, fire, marine, accident)",
+            "Importance"
+          ],
+          "learning_objectives": [
+            "Explain insurance principles"
+          ],
+          "common_misconceptions": [
+            "Insurance is gambling"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Banking Services",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Banking",
+          "concepts": [
+            "Types of accounts",
+            "Cheques",
+            "Bank drafts",
+            "Loans and overdrafts",
+            "E-banking"
+          ],
+          "learning_objectives": [
+            "Describe banking services"
+          ],
+          "common_misconceptions": [
+            "Savings account is for saving only"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Communication",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Business Communication",
+          "concepts": [
+            "Postal services",
+            "Telecommunication",
+            "Mass media",
+            "E-commerce"
+          ],
+          "learning_objectives": [
+            "Use communication effectively"
+          ],
+          "common_misconceptions": [
+            "Communication is only talking"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Warehousing",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Storage",
+          "concepts": [
+            "Types of warehouses",
+            "Functions",
+            "Documents"
+          ],
+          "learning_objectives": [
+            "Explain warehousing"
+          ],
+          "common_misconceptions": [
+            "Warehouse is only for finished goods"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tourism",
+      "term": 3,
+      "waec_frequency": "low",
+      "subtopics": [
+        {
+          "title": "Tourism Industry",
+          "concepts": [
+            "Meaning",
+            "Importance",
+            "Problems in Nigeria"
+          ],
+          "learning_objectives": [
+            "Explain tourism"
+          ],
+          "common_misconceptions": [
+            "Tourism is only about holidays"
+          ]
+        }
+      ]
+    }
+  ]
+}

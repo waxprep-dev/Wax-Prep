@@ -1,0 +1,222 @@
+{
+  "subject_name": "Literature in English",
+  "class_level": "SS1",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "Senior Secondary School 1 Literature - Prose, poetry, drama, literary appreciation",
+  "waec_high_priority_topics": [
+    "Literary Devices",
+    "Prose Analysis",
+    "Poetry Analysis",
+    "Drama Analysis"
+  ],
+  "topics": [
+    {
+      "title": "Introduction to Literature",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Genres and Elements",
+          "concepts": [
+            "Definition of literature",
+            "Prose, poetry, drama",
+            "Why we study literature",
+            "Literary terms"
+          ],
+          "learning_objectives": [
+            "Identify genres of literature"
+          ],
+          "common_misconceptions": [
+            "Literature is just reading storybooks"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prose",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Elements of Prose",
+          "learning_objectives": [
+            "Analyze prose texts"
+          ],
+          "common_misconceptions": [
+            "Plot is the same as story"
+          ],
+          "concepts": [
+            "Plot",
+            "Setting",
+            "Character/characterization",
+            "Theme",
+            "Point of view",
+            "Narrative techniques"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Poetry",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Elements of Poetry",
+          "concepts": [
+            "Structure (stanza, verse, line)",
+            "Rhyme and rhythm",
+            "Meter",
+            "Subject matter vs theme",
+            "Types of poetry"
+          ],
+          "learning_objectives": [
+            "Analyze poetic devices"
+          ],
+          "common_misconceptions": [
+            "All poems must rhyme"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Drama",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Elements of Drama",
+          "concepts": [
+            "Plot and subplot",
+            "Characterization",
+            "Dialogue",
+            "Setting/stage directions",
+            "Conflict",
+            "Theme"
+          ],
+          "learning_objectives": [
+            "Analyze dramatic texts"
+          ],
+          "common_misconceptions": [
+            "Drama is only for acting"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Literary Devices",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Figures of Speech",
+          "concepts": [
+            "Simile, metaphor, personification",
+            "Hyperbole, understatement",
+            "Irony (dramatic, situational, verbal)",
+            "Symbolism",
+            "Imagery",
+            "Alliteration, assonance"
+          ],
+          "learning_objectives": [
+            "Identify and explain literary devices"
+          ],
+          "common_misconceptions": [
+            "Simile and metaphor are the same"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Literary Appreciation",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Analysis Skills",
+          "learning_objectives": [
+            "Write analytical essays"
+          ],
+          "common_misconceptions": [
+            "Just summarize the text"
+          ],
+          "concepts": [
+            "How to answer literature questions",
+            "Textual evidence",
+            "Critical evaluation",
+            "Comparative analysis"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "African Literature",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "African Literary Tradition",
+          "learning_objectives": [
+            "Appreciate African literature"
+          ],
+          "common_misconceptions": [
+            "African literature started with colonialism"
+          ],
+          "concepts": [
+            "Oral tradition",
+            "Written literature",
+            "Themes in African literature",
+            "Notable African authors"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Non-African Literature",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "World Literature",
+          "learning_objectives": [
+            "Compare world literature"
+          ],
+          "common_misconceptions": [
+            "Only British literature matters"
+          ],
+          "concepts": [
+            "Shakespearean drama",
+            "Classical literature",
+            "Contemporary world literature"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Appreciation of Set Texts",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Set Text Analysis",
+          "learning_objectives": [
+            "Analyze prescribed texts thoroughly"
+          ],
+          "common_misconceptions": [
+            "Memorizing summary is enough"
+          ],
+          "concepts": [
+            "Themes",
+            "Characters",
+            "Plot summary",
+            "Author's style"
+          ]
+        }
+      ]
+    }
+  ]
+}

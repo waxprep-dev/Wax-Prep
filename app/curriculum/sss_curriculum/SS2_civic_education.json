@@ -1,0 +1,216 @@
+{
+  "subject_name": "Civic Education",
+  "class_level": "SS2",
+  "exam_relevance": [
+    "WAEC",
+    "NECO"
+  ],
+  "description": "SS2 Civic Education - Human rights, citizenship, government, Nigerian constitution",
+  "waec_high_priority_topics": [
+    "Human Rights",
+    "Citizenship",
+    "Government",
+    "Constitution"
+  ],
+  "topics": [
+    {
+      "title": "Human Rights",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Fundamental Rights",
+          "concepts": [
+            "Universal Declaration",
+            "Rights in Nigerian constitution",
+            "Limitations on rights",
+            "Enforcement"
+          ],
+          "learning_objectives": [
+            "Explain human rights protection"
+          ],
+          "common_misconceptions": [
+            "Rights are absolute"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Citizenship",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Rights and Duties",
+          "concepts": [
+            "Types of citizenship",
+            "Rights of citizens",
+            "Duties and obligations",
+            "Dual citizenship"
+          ],
+          "learning_objectives": [
+            "Balance rights with duties"
+          ],
+          "common_misconceptions": [
+            "Citizenship is automatic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Federalism",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Federal System",
+          "concepts": [
+            "Federal structure",
+            "State creation",
+            "Resource control",
+            "Devolution"
+          ],
+          "learning_objectives": [
+            "Analyze Nigerian federalism"
+          ],
+          "common_misconceptions": [
+            "Federalism means central control"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rule of Law",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Legal Framework",
+          "concepts": [
+            "Meaning",
+            "Principles",
+            "Supremacy of constitution",
+            "Judicial independence"
+          ],
+          "learning_objectives": [
+            "Evaluate rule of law in Nigeria"
+          ],
+          "common_misconceptions": [
+            "Rule of law means many laws"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Democracy",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Democratic Practice",
+          "concepts": [
+            "Electoral process",
+            "Political parties",
+            "Civil society",
+            "Challenges"
+          ],
+          "learning_objectives": [
+            "Assess democratic practice"
+          ],
+          "common_misconceptions": [
+            "Democracy is only voting"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Constitution",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Constitutional Development",
+          "concepts": [
+            "Historical development",
+            "Features of 1999 constitution",
+            "Amendments",
+            "Review"
+          ],
+          "learning_objectives": [
+            "Evaluate Nigerian constitution"
+          ],
+          "common_misconceptions": [
+            "Constitution cannot be changed"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "National Unity",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Integration",
+          "concepts": [
+            "Ethnic relations",
+            "Religious tolerance",
+            "National symbols",
+            "Patriotism"
+          ],
+          "learning_objectives": [
+            "Promote national unity"
+          ],
+          "common_misconceptions": [
+            "Unity means uniformity"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Foreign Policy",
+          "concepts": [
+            "Nigeria's foreign policy",
+            "International organizations",
+            "Regional cooperation",
+            "Diplomacy"
+          ],
+          "learning_objectives": [
+            "Explain Nigeria's foreign policy"
+          ],
+          "common_misconceptions": [
+            "Foreign policy doesn't affect citizens"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Youth Empowerment",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Youth Development",
+          "concepts": [
+            "Education",
+            "Skill acquisition",
+            "Employment",
+            "Entrepreneurship",
+            "Leadership"
+          ],
+          "learning_objectives": [
+            "Suggest empowerment strategies"
+          ],
+          "common_misconceptions": [
+            "Government alone empowers youth"
+          ]
+        }
+      ]
+    }
+  ]
+}

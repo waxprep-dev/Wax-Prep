@@ -1,0 +1,163 @@
+{
+  "subject_name": "History",
+  "class_level": "SS3",
+  "exam_relevance": [
+    "WAEC",
+    "NECO"
+  ],
+  "description": "Senior Secondary School 3 History - SSCE preparation and comprehensive revision",
+  "waec_high_priority_topics": [
+    "West African History",
+    "Nigerian History",
+    "World History",
+    "European History"
+  ],
+  "topics": [
+    {
+      "title": "West African History",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "West African History",
+          "concepts": [
+            "Pre-colonial states",
+            "Colonial rule",
+            "Independence"
+          ],
+          "learning_objectives": [
+            "Understand west african history"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nigerian History",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Nigerian History",
+          "concepts": [
+            "Pre-colonial",
+            "Colonial",
+            "Post-independence"
+          ],
+          "learning_objectives": [
+            "Understand nigerian history"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "World History",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "World History",
+          "concepts": [
+            "World Wars",
+            "Cold War",
+            "Decolonization"
+          ],
+          "learning_objectives": [
+            "Understand world history"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "European History",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "European History",
+          "concepts": [
+            "Renaissance",
+            "Reformation",
+            "Industrial Revolution"
+          ],
+          "learning_objectives": [
+            "Understand european history"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Contemporary Issues",
+      "term": 2,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Contemporary Issues",
+          "concepts": [
+            "Globalization",
+            "Terrorism",
+            "Climate change"
+          ],
+          "learning_objectives": [
+            "Understand contemporary issues"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Historiography",
+      "term": 2,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Historiography",
+          "concepts": [
+            "Sources",
+            "Methods",
+            "Interpretation"
+          ],
+          "learning_objectives": [
+            "Understand historiography"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WAEC/NECO Revision",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "WAEC/NECO Revision",
+          "concepts": [
+            "Past questions",
+            "Essay writing"
+          ],
+          "learning_objectives": [
+            "Understand waec/neco revision"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    }
+  ]
+}

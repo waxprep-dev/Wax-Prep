@@ -1,0 +1,166 @@
+{
+  "subject_name": "Literature in English",
+  "class_level": "SS3",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "Senior Secondary School 3 Literature in English - SSCE preparation and comprehensive revision",
+  "waec_high_priority_topics": [
+    "Prose Analysis",
+    "Poetry Analysis",
+    "Drama Analysis",
+    "Literary Devices"
+  ],
+  "topics": [
+    {
+      "title": "Prose Analysis",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Prose Analysis",
+          "concepts": [
+            "Themes",
+            "Characterization",
+            "Setting",
+            "Style"
+          ],
+          "learning_objectives": [
+            "Understand prose analysis"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Poetry Analysis",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Poetry Analysis",
+          "concepts": [
+            "Themes",
+            "Poetic devices",
+            "Structure",
+            "Tone"
+          ],
+          "learning_objectives": [
+            "Understand poetry analysis"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Drama Analysis",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Drama Analysis",
+          "concepts": [
+            "Themes",
+            "Dramatic techniques",
+            "Characterization"
+          ],
+          "learning_objectives": [
+            "Understand drama analysis"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Literary Devices",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Literary Devices",
+          "concepts": [
+            "Figures of speech",
+            "Literary terms",
+            "Appreciation skills"
+          ],
+          "learning_objectives": [
+            "Understand literary devices"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Set Texts Revision",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Set Texts Revision",
+          "concepts": [
+            "WAEC texts",
+            "NECO texts",
+            "Analysis practice"
+          ],
+          "learning_objectives": [
+            "Understand set texts revision"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Essay Writing",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Essay Writing",
+          "concepts": [
+            "Literary essays",
+            "Textual evidence",
+            "Critical analysis"
+          ],
+          "learning_objectives": [
+            "Understand essay writing"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WAEC/NECO/JAMB Revision",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "WAEC/NECO/JAMB Revision",
+          "concepts": [
+            "Past questions",
+            "Exam techniques"
+          ],
+          "learning_objectives": [
+            "Understand waec/neco/jamb revision"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    }
+  ]
+}

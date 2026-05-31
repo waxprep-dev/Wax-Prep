@@ -1,0 +1,188 @@
+{
+  "subject_name": "Civic Education",
+  "class_level": "SS3",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "Senior Secondary School 3 Civic Education - SSCE preparation and comprehensive revision",
+  "waec_high_priority_topics": [
+    "Citizenship and Rights",
+    "Democracy and Rule of Law",
+    "Government in Nigeria",
+    "National Values"
+  ],
+  "topics": [
+    {
+      "title": "Citizenship and Rights",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Citizenship and Rights",
+          "concepts": [
+            "Citizenship types",
+            "Fundamental rights",
+            "Duties and obligations"
+          ],
+          "learning_objectives": [
+            "Understand citizenship and rights"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Democracy and Rule of Law",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Democracy and Rule of Law",
+          "concepts": [
+            "Democratic principles",
+            "Electoral process",
+            "Constitutional supremacy"
+          ],
+          "learning_objectives": [
+            "Understand democracy and rule of law"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Government in Nigeria",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Government in Nigeria",
+          "concepts": [
+            "Federal system",
+            "Arms of government",
+            "Local government"
+          ],
+          "learning_objectives": [
+            "Understand government in nigeria"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "National Values",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "National Values",
+          "concepts": [
+            "Integrity",
+            "Patriotism",
+            "Self-reliance",
+            "Discipline"
+          ],
+          "learning_objectives": [
+            "Understand national values"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Social Issues",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Social Issues",
+          "concepts": [
+            "Corruption",
+            "Drug abuse",
+            "Cultism",
+            "Human trafficking"
+          ],
+          "learning_objectives": [
+            "Understand social issues"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "term": 2,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "International Relations",
+          "concepts": [
+            "UN",
+            "AU",
+            "ECOWAS",
+            "Foreign policy"
+          ],
+          "learning_objectives": [
+            "Understand international relations"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Leadership and Followership",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Leadership and Followership",
+          "concepts": [
+            "Leadership qualities",
+            "Followership",
+            "Youth empowerment"
+          ],
+          "learning_objectives": [
+            "Understand leadership and followership"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WAEC/NECO Revision",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "WAEC/NECO Revision",
+          "concepts": [
+            "Past questions",
+            "Exam techniques"
+          ],
+          "learning_objectives": [
+            "Understand waec/neco revision"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    }
+  ]
+}

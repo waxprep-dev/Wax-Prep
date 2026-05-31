@@ -1,0 +1,241 @@
+{
+  "subject_name": "Geography",
+  "class_level": "SS1",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "Senior Secondary School 1 Geography - Physical geography, map work, climate, vegetation",
+  "waec_high_priority_topics": [
+    "Map Reading",
+    "Climate",
+    "Vegetation",
+    "Rocks and Weathering"
+  ],
+  "topics": [
+    {
+      "title": "Introduction to Geography",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Meaning and Scope",
+          "concepts": [
+            "Definition",
+            "Branches (physical, human, regional)",
+            "Importance",
+            "Relationship with other subjects"
+          ],
+          "learning_objectives": [
+            "Explain scope of geography"
+          ],
+          "common_misconceptions": [
+            "Geography is just about maps"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Earth",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Earth Structure",
+          "concepts": [
+            "Shape and size",
+            "Earth's rotation and revolution",
+            "Latitudes and longitudes",
+            "Great and small circles",
+            "Time zones"
+          ],
+          "learning_objectives": [
+            "Calculate local time"
+          ],
+          "common_misconceptions": [
+            "Earth is perfectly round"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Map Work",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Map Reading and Interpretation",
+          "concepts": [
+            "Types of maps",
+            "Map scale",
+            "Map symbols",
+            "Contours and relief",
+            "Gradient and intervisibility",
+            "Bearing and distance"
+          ],
+          "learning_objectives": [
+            "Interpret topographical maps"
+          ],
+          "common_misconceptions": [
+            "Scale is just the key"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rocks and Weathering",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Earth's Crust",
+          "concepts": [
+            "Types of rocks (igneous, sedimentary, metamorphic)",
+            "Rock cycle",
+            "Weathering (physical, chemical, biological)",
+            "Mass wasting"
+          ],
+          "learning_objectives": [
+            "Explain rock cycle"
+          ],
+          "common_misconceptions": [
+            "Rocks never change"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Climate",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Weather and Climate",
+          "concepts": [
+            "Elements of weather",
+            "Factors affecting climate",
+            "Climate types (equatorial, tropical, desert, Mediterranean)",
+            "Climate change"
+          ],
+          "learning_objectives": [
+            "Describe world climate types"
+          ],
+          "common_misconceptions": [
+            "Weather and climate are the same"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vegetation",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Plant Cover",
+          "concepts": [
+            "Types of vegetation (tropical rainforest, savanna, desert, Mediterranean)",
+            "Relationship with climate",
+            "Human impact on vegetation"
+          ],
+          "learning_objectives": [
+            "Relate vegetation to climate"
+          ],
+          "common_misconceptions": [
+            "Vegetation is just forest"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Water Bodies",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Oceans, Rivers, Lakes",
+          "concepts": [
+            "Ocean currents",
+            "Tides and waves",
+            "Rivers (drainage patterns, erosion, deposition)",
+            "Lakes (types, formation)"
+          ],
+          "learning_objectives": [
+            "Explain ocean currents"
+          ],
+          "common_misconceptions": [
+            "Ocean currents are only wind-driven"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Soil",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Soil Formation and Types",
+          "concepts": [
+            "Soil formation",
+            "Soil profile",
+            "Soil types",
+            "Soil erosion and conservation"
+          ],
+          "learning_objectives": [
+            "Describe soil conservation methods"
+          ],
+          "common_misconceptions": [
+            "All soil is the same"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Population",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Population Studies",
+          "concepts": [
+            "Population distribution",
+            "Population density",
+            "Population growth",
+            "Migration",
+            "Population problems"
+          ],
+          "learning_objectives": [
+            "Analyze population data"
+          ],
+          "common_misconceptions": [
+            "High density always means overpopulation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Settlement",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Human Settlements",
+          "learning_objectives": [
+            "Classify settlements"
+          ],
+          "common_misconceptions": [
+            "Urban is always better"
+          ],
+          "concepts": [
+            "Types of settlement",
+            "Factors affecting settlement",
+            "Urbanization",
+            "Problems of urbanization"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "subject_name": "English Language",
+  "class_level": "SS2",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "Senior Secondary School 2 English - Advanced essay writing, comprehension, lexis/structure, oral English",
+  "waec_high_priority_topics": [
+    "Argumentative Essay",
+    "Comprehension",
+    "Summary",
+    "Lexis and Structure",
+    "Oral English"
+  ],
+  "topics": [
+    {
+      "title": "Essay Writing",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Advanced Essays",
+          "learning_objectives": [
+            "Write advanced essays"
+          ],
+          "common_misconceptions": [
+            "Longer essays are better"
+          ],
+          "concepts": [
+            "Argumentative",
+            "Descriptive",
+            "Narrative",
+            "Expository",
+            "Article writing"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Comprehension",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Advanced Reading",
+          "learning_objectives": [
+            "Answer complex comprehension questions"
+          ],
+          "common_misconceptions": [
+            "Copying from passage is acceptable"
+          ],
+          "concepts": [
+            "Critical reading",
+            "Inference",
+            "Evaluation",
+            "Contextual meaning"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Summary Writing",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Advanced Summary",
+          "learning_objectives": [
+            "Write precise summaries"
+          ],
+          "common_misconceptions": [
+            "Summary should include examples"
+          ],
+          "concepts": [
+            "Identifying main points",
+            "Paraphrasing",
+            "Conciseness",
+            "Word limit"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lexis and Structure",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Advanced Vocabulary",
+          "learning_objectives": [
+            "Use vocabulary in context"
+          ],
+          "common_misconceptions": [
+            "Register doesn't matter"
+          ],
+          "concepts": [
+            "Synonyms and antonyms",
+            "Word formation",
+            "Register",
+            "Idioms and figurative language"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Grammar",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Advanced Grammar",
+          "learning_objectives": [
+            "Use advanced grammar"
+          ],
+          "common_misconceptions": [
+            "Second conditional uses was not were"
+          ],
+          "concepts": [
+            "Tenses review",
+            "Reported speech",
+            "Active and passive voice",
+            "Conditional sentences"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Oral English",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Phonetics",
+          "learning_objectives": [
+            "Use correct pronunciation"
+          ],
+          "common_misconceptions": [
+            "Mother tongue interference is unavoidable"
+          ],
+          "concepts": [
+            "Vowels and consonants",
+            "Stress",
+            "Intonation",
+            "Rhymes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Letter Writing",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Formal Letters",
+          "learning_objectives": [
+            "Write formal letters"
+          ],
+          "common_misconceptions": [
+            "Contractions are acceptable in formal letters"
+          ],
+          "concepts": [
+            "Formal letter format",
+            "Language register",
+            "Common topics"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Speech Writing",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Speeches",
+          "learning_objectives": [
+            "Write speeches"
+          ],
+          "common_misconceptions": [
+            "Speeches are same as essays"
+          ],
+          "concepts": [
+            "Format",
+            "Language",
+            "Delivery considerations"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Literature",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Literary Analysis",
+          "learning_objectives": [
+            "Analyze literature"
+          ],
+          "common_misconceptions": [
+            "Memorizing summaries is enough"
+          ],
+          "concepts": [
+            "Set texts",
+            "Literary devices",
+            "Themes and characterization"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nigerian English Usage",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Common Errors",
+          "learning_objectives": [
+            "Avoid common errors"
+          ],
+          "common_misconceptions": [
+            "Nigerian English is wrong English always"
+          ],
+          "concepts": [
+            "Nigerianisms",
+            "Correct usage",
+            "Exam traps"
+          ]
+        }
+      ]
+    }
+  ]
+}

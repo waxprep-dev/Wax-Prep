@@ -1,0 +1,241 @@
+{
+  "subject_name": "Commerce",
+  "class_level": "SS1",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "Senior Secondary School 1 Commerce - Trade, aids to trade, business organizations, finance",
+  "waec_high_priority_topics": [
+    "Trade",
+    "Aids to Trade",
+    "Business Units",
+    "Banking"
+  ],
+  "topics": [
+    {
+      "title": "Introduction to Commerce",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Meaning and Scope",
+          "concepts": [
+            "Definition of commerce",
+            "Trade and aids to trade",
+            "Importance of commerce",
+            "Relationship with industry"
+          ],
+          "learning_objectives": [
+            "Explain scope of commerce"
+          ],
+          "common_misconceptions": [
+            "Commerce is the same as business"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Trade",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Types of Trade",
+          "concepts": [
+            "Home trade (retail, wholesale)",
+            "Foreign trade (import, export, entrepot)",
+            "Visible and invisible trade",
+            "Barter trade"
+          ],
+          "learning_objectives": [
+            "Distinguish types of trade"
+          ],
+          "common_misconceptions": [
+            "Trade is only buying and selling"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aids to Trade",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Supporting Services",
+          "concepts": [
+            "Transportation",
+            "Communication",
+            "Banking",
+            "Insurance",
+            "Warehousing",
+            "Advertising",
+            "Tourism"
+          ],
+          "learning_objectives": [
+            "Explain each aid to trade"
+          ],
+          "common_misconceptions": [
+            "Trade can exist without aids"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Business Units",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Forms of Business Organization",
+          "concepts": [
+            "Sole proprietorship",
+            "Partnership",
+            "Limited liability companies",
+            "Public corporations",
+            "Cooperative societies"
+          ],
+          "learning_objectives": [
+            "Compare business units"
+          ],
+          "common_misconceptions": [
+            "Sole trader means one employee only"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Banking",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Banking Services",
+          "concepts": [
+            "Types of banks",
+            "Functions of commercial banks",
+            "Central bank functions",
+            "Types of accounts",
+            "Cheques and their types"
+          ],
+          "learning_objectives": [
+            "Explain banking services"
+          ],
+          "common_misconceptions": [
+            "Central bank is a commercial bank"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Insurance",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Insurance Principles",
+          "concepts": [
+            "Meaning and importance",
+            "Principles (utmost good faith, insurable interest, indemnity, contribution, subrogation, proximate cause)",
+            "Types of insurance"
+          ],
+          "learning_objectives": [
+            "Explain insurance principles"
+          ],
+          "common_misconceptions": [
+            "Insurance is gambling"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Transportation",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Modes of Transport",
+          "concepts": [
+            "Road, rail, water, air, pipeline",
+            "Advantages and disadvantages",
+            "Choice of transport"
+          ],
+          "learning_objectives": [
+            "Compare transport modes"
+          ],
+          "common_misconceptions": [
+            "Air transport is always best"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Communication",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Communication Services",
+          "concepts": [
+            "Meaning and importance",
+            "Types (postal, telecommunication, mass media)",
+            "Modern communication technology"
+          ],
+          "learning_objectives": [
+            "Explain communication methods"
+          ],
+          "common_misconceptions": [
+            "Communication is only talking"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advertising",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Promotion",
+          "concepts": [
+            "Types of advertising",
+            "Media of advertising",
+            "Advantages and disadvantages",
+            "Consumer protection"
+          ],
+          "learning_objectives": [
+            "Evaluate advertising methods"
+          ],
+          "common_misconceptions": [
+            "Advertising always lies"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Market",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Market Structure",
+          "concepts": [
+            "Meaning of market",
+            "Consumer market",
+            "Factor market",
+            "Stock exchange",
+            "Market survey"
+          ],
+          "learning_objectives": [
+            "Explain market structures"
+          ],
+          "common_misconceptions": [
+            "Market is only a physical place"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "subject_name": "Chemistry",
+  "class_level": "SS2",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "Senior Secondary School 2 Chemistry - Organic chemistry, electrochemistry, chemical equilibrium, industrial chemistry",
+  "waec_high_priority_topics": [
+    "Organic Chemistry",
+    "Electrochemistry",
+    "Chemical Equilibrium",
+    "Metals"
+  ],
+  "topics": [
+    {
+      "title": "Organic Chemistry Introduction",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Carbon Chemistry",
+          "concepts": [
+            "Unique properties of carbon",
+            "Homologous series",
+            "Functional groups",
+            "IUPAC nomenclature",
+            "Isomerism"
+          ],
+          "learning_objectives": [
+            "Name organic compounds"
+          ],
+          "common_misconceptions": [
+            "Organic means natural only"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hydrocarbons",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Alkanes, Alkenes, Alkynes",
+          "concepts": [
+            "Alkanes (naming, properties, reactions)",
+            "Alkenes (naming, properties, reactions, test)",
+            "Alkynes",
+            "Benzene"
+          ],
+          "learning_objectives": [
+            "Distinguish hydrocarbon families"
+          ],
+          "common_misconceptions": [
+            "All hydrocarbons are fuels only"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alcohols and Ethers",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Oxygen-containing Compounds",
+          "concepts": [
+            "Classification of alcohols",
+            "Preparation and reactions",
+            "Uses",
+            "Ethers"
+          ],
+          "learning_objectives": [
+            "Describe alcohol properties"
+          ],
+          "common_misconceptions": [
+            "All alcohols are drinks"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Carbonyl Compounds",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Aldehydes and Ketones",
+          "concepts": [
+            "Nomenclature",
+            "Preparation",
+            "Reactions",
+            "Distinguishing tests",
+            "Uses"
+          ],
+          "learning_objectives": [
+            "Distinguish aldehydes from ketones"
+          ],
+          "common_misconceptions": [
+            "Aldehydes and ketones are the same"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Carboxylic Acids and Derivatives",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Acids, Esters, Fats",
+          "concepts": [
+            "Carboxylic acids",
+            "Esters (preparation, properties)",
+            "Fats and oils",
+            "Soap making (saponification)"
+          ],
+          "learning_objectives": [
+            "Explain esterification and saponification"
+          ],
+          "common_misconceptions": [
+            "Esters are only perfumes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Electrochemistry",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Redox Reactions",
+          "concepts": [
+            "Oxidation and reduction",
+            "Electrolysis",
+            "Faraday's laws",
+            "Electrochemical cells",
+            "Applications"
+          ],
+          "learning_objectives": [
+            "Calculate electrolysis quantities"
+          ],
+          "common_misconceptions": [
+            "Oxidation is only adding oxygen"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chemical Equilibrium",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Reversible Reactions",
+          "concepts": [
+            "Dynamic equilibrium",
+            "Le Chatelier's principle",
+            "Equilibrium constant",
+            "Factors affecting equilibrium"
+          ],
+          "learning_objectives": [
+            "Apply Le Chatelier's principle"
+          ],
+          "common_misconceptions": [
+            "Equilibrium means reactions stop"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Metals and Their Compounds",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Metallurgy",
+          "concepts": [
+            "General properties of metals",
+            "Alkali metals",
+            "Alkaline earth metals",
+            "Transition metals",
+            "Extraction of metals"
+          ],
+          "learning_objectives": [
+            "Describe metal extraction"
+          ],
+          "common_misconceptions": [
+            "All metals are magnetic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Non-Metals",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Important Non-Metals",
+          "concepts": [
+            "Halogens",
+            "Noble gases",
+            "Nitrogen and its compounds",
+            "Sulfur and its compounds"
+          ],
+          "learning_objectives": [
+            "Describe non-metal properties"
+          ],
+          "common_misconceptions": [
+            "Non-metals are not useful"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Industrial Chemistry",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Chemical Industry",
+          "concepts": [
+            "Contact process (H2SO4)",
+            "Haber process (NH3)",
+            "Solvay process (Na2CO3)",
+            "Petrochemicals"
+          ],
+          "learning_objectives": [
+            "Describe industrial processes"
+          ],
+          "common_misconceptions": [
+            "Industrial processes are simple"
+          ]
+        }
+      ]
+    }
+  ]
+}

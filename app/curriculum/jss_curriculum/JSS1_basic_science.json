@@ -1,0 +1,272 @@
+{
+  "subject_name": "Basic Science",
+  "class_level": "JSS1",
+  "exam_relevance": [
+    "BECE",
+    "Junior WAEC"
+  ],
+  "description": "Junior Secondary School 1 Basic Science - Introduction to scientific thinking and foundational concepts in biology, chemistry, and physics",
+  "waec_high_priority_topics": [],
+  "topics": [
+    {
+      "title": "Introduction to Science",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "What is Science?",
+          "concepts": [
+            "Meaning of science",
+            "Branches of science (biology, chemistry, physics)",
+            "Scientific method",
+            "Importance of science in everyday life",
+            "Careers in science"
+          ],
+          "learning_objectives": [
+            "Define science and identify its branches",
+            "List steps in scientific method",
+            "Appreciate role of science in daily life"
+          ],
+          "common_misconceptions": [
+            "Thinking science is only about chemicals",
+            "Believing scientists always wear lab coats"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Living and Non-Living Things",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Characteristics of Life",
+          "concepts": [
+            "Movement",
+            "Nutrition",
+            "Respiration",
+            "Growth",
+            "Reproduction",
+            "Excretion",
+            "Irritability"
+          ],
+          "learning_objectives": [
+            "Distinguish living from non-living things",
+            "List and explain characteristics of living things"
+          ],
+          "common_misconceptions": [
+            "Thinking all living things can move from place to place",
+            "Confusing growth with increase in size only"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Matter",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "States of Matter",
+          "concepts": [
+            "Solid state and properties",
+            "Liquid state and properties",
+            "Gaseous state and properties",
+            "Change of state",
+            "Melting, freezing, evaporation, condensation, sublimation"
+          ],
+          "learning_objectives": [
+            "Identify properties of each state of matter",
+            "Explain processes of change of state",
+            "Give examples of each state"
+          ],
+          "common_misconceptions": [
+            "Thinking air is not matter because it is invisible",
+            "Believing ice is a different substance from water"
+          ]
+        },
+        {
+          "title": "Measurement of Matter",
+          "concepts": [
+            "Length and its units",
+            "Mass and its units",
+            "Volume and its units",
+            "Time and its units",
+            "Temperature and its units",
+            "Measuring instruments"
+          ],
+          "learning_objectives": [
+            "Use measuring instruments correctly",
+            "Convert between units",
+            "Record measurements accurately"
+          ],
+          "common_misconceptions": [
+            "Confusing mass with weight",
+            "Using wrong units"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Energy",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Forms and Sources of Energy",
+          "concepts": [
+            "Mechanical energy",
+            "Heat energy",
+            "Light energy",
+            "Sound energy",
+            "Electrical energy",
+            "Chemical energy",
+            "Solar energy",
+            "Renewable and non-renewable energy"
+          ],
+          "learning_objectives": [
+            "Identify different forms of energy",
+            "Classify energy sources as renewable or non-renewable",
+            "Explain energy transformation"
+          ],
+          "common_misconceptions": [
+            "Thinking energy is only for electricity",
+            "Believing energy is used up in transformations"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Force and Motion",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Concepts of Force and Motion",
+          "concepts": [
+            "Definition of force",
+            "Types of forces",
+            "Speed and velocity",
+            "Acceleration",
+            "Friction",
+            "Gravitational force"
+          ],
+          "learning_objectives": [
+            "Define force and give examples",
+            "Describe effects of forces on objects",
+            "Calculate speed from distance and time"
+          ],
+          "common_misconceptions": [
+            "Thinking force is needed to keep things moving",
+            "Confusing speed with velocity"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cells",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "The Cell as Basic Unit of Life",
+          "concepts": [
+            "Discovery of cells",
+            "Cell theory",
+            "Plant cell structure",
+            "Animal cell structure",
+            "Differences between plant and animal cells",
+            "Cell functions"
+          ],
+          "learning_objectives": [
+            "Identify parts of plant and animal cells",
+            "State cell theory",
+            "Compare plant and animal cells"
+          ],
+          "common_misconceptions": [
+            "Thinking cells are only in blood",
+            "Confusing cell wall with cell membrane"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Classification of Living Things",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Taxonomy",
+          "concepts": [
+            "Kingdoms of living things",
+            "Vertebrates and invertebrates",
+            "Classes of vertebrates",
+            "Flowering and non-flowering plants",
+            "Importance of classification"
+          ],
+          "learning_objectives": [
+            "Classify organisms into kingdoms",
+            "Distinguish vertebrates from invertebrates",
+            "Identify classes of vertebrates"
+          ],
+          "common_misconceptions": [
+            "Thinking bacteria are not living",
+            "Confusing amphibians with reptiles"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Environment",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Ecosystem and Habitat",
+          "concepts": [
+            "Components of environment",
+            "Habitat types",
+            "Ecosystem components",
+            "Food chains and food webs",
+            "Adaptation of organisms"
+          ],
+          "learning_objectives": [
+            "Describe different habitats",
+            "Construct simple food chains",
+            "Explain adaptation of organisms"
+          ],
+          "common_misconceptions": [
+            "Thinking producers are only plants on farms",
+            "Confusing habitat with ecosystem"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Human Body Systems",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Basic Body Systems",
+          "concepts": [
+            "Digestive system and process",
+            "Respiratory system",
+            "Circulatory system",
+            "Skeletal system",
+            "Nervous system"
+          ],
+          "learning_objectives": [
+            "Identify parts of major body systems",
+            "Explain functions of each system",
+            "Describe how systems work together"
+          ],
+          "common_misconceptions": [
+            "Thinking the heart pumps blood to lungs only",
+            "Confusing respiration with breathing"
+          ]
+        }
+      ]
+    }
+  ]
+}

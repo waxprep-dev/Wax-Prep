@@ -1,0 +1,164 @@
+{
+  "subject_name": "Agricultural Science",
+  "class_level": "SS3",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "Senior Secondary School 3 Agricultural Science - SSCE preparation and comprehensive revision",
+  "waec_high_priority_topics": [
+    "Crop Production",
+    "Animal Husbandry",
+    "Soil Science",
+    "Agricultural Economics"
+  ],
+  "topics": [
+    {
+      "title": "Crop Production",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Crop Production",
+          "concepts": [
+            "Arable crops",
+            "Cultural practices",
+            "Harvesting"
+          ],
+          "learning_objectives": [
+            "Understand crop production"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Animal Husbandry",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Animal Husbandry",
+          "concepts": [
+            "Livestock",
+            "Nutrition",
+            "Health"
+          ],
+          "learning_objectives": [
+            "Understand animal husbandry"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Soil Science",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Soil Science",
+          "concepts": [
+            "Soil types",
+            "Fertility",
+            "Conservation"
+          ],
+          "learning_objectives": [
+            "Understand soil science"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Agricultural Economics",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Agricultural Economics",
+          "concepts": [
+            "Farm records",
+            "Marketing",
+            "Finance"
+          ],
+          "learning_objectives": [
+            "Understand agricultural economics"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pest and Disease Control",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Pest and Disease Control",
+          "concepts": [
+            "Crop pests",
+            "Animal diseases",
+            "Control methods"
+          ],
+          "learning_objectives": [
+            "Understand pest and disease control"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Agricultural Extension",
+      "term": 2,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Agricultural Extension",
+          "concepts": [
+            "Methods",
+            "Problems",
+            "Government role"
+          ],
+          "learning_objectives": [
+            "Understand agricultural extension"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WAEC/NECO/JAMB Revision",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "WAEC/NECO/JAMB Revision",
+          "concepts": [
+            "Past questions",
+            "Practical skills"
+          ],
+          "learning_objectives": [
+            "Understand waec/neco/jamb revision"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "subject_name": "Social Studies",
+  "class_level": "JSS3",
+  "exam_relevance": [
+    "BECE",
+    "Junior WAEC"
+  ],
+  "description": "Junior Secondary School 3 Social Studies - BECE preparation: Nigerian history, geography, economy, culture",
+  "waec_high_priority_topics": [
+    "Nigerian History",
+    "Geography",
+    "Economy",
+    "Social Problems"
+  ],
+  "topics": [
+    {
+      "title": "Nigerian History",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Pre-Colonial to Independence",
+          "concepts": [
+            "Pre-colonial societies",
+            "Colonial rule",
+            "Nationalist movements",
+            "Independence",
+            "Post-independence"
+          ],
+          "learning_objectives": [
+            "Trace Nigeria's historical development"
+          ],
+          "common_misconceptions": [
+            "Thinking Nigeria existed before colonialism"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nigerian Geography",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Physical and Human Geography",
+          "concepts": [
+            "Location and size",
+            "Climate",
+            "Vegetation",
+            "Population",
+            "Resources"
+          ],
+          "learning_objectives": [
+            "Describe Nigeria's geography"
+          ],
+          "common_misconceptions": [
+            "Thinking Nigeria is the largest African country"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nigerian Economy",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Economic System",
+          "concepts": [
+            "Agriculture",
+            "Oil and gas",
+            "Mineral resources",
+            "Trade",
+            "Economic challenges"
+          ],
+          "learning_objectives": [
+            "Explain Nigeria's economy"
+          ],
+          "common_misconceptions": [
+            "Thinking oil is the only resource"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Government and Politics",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Political System",
+          "concepts": [
+            "Constitution",
+            "Democracy",
+            "Federal system",
+            "Electoral system",
+            "Political parties"
+          ],
+          "learning_objectives": [
+            "Explain Nigeria's political system"
+          ],
+          "common_misconceptions": [
+            "Confusing federal with unitary system"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Culture and Society",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Social Organization",
+          "concepts": [
+            "Family systems",
+            "Marriage",
+            "Religion",
+            "Education",
+            "Healthcare"
+          ],
+          "learning_objectives": [
+            "Describe Nigerian social systems"
+          ],
+          "common_misconceptions": [
+            "Stereotyping ethnic groups"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Social Problems",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Challenges and Solutions",
+          "concepts": [
+            "Poverty",
+            "Unemployment",
+            "Corruption",
+            "Ethnic conflict",
+            "Environmental degradation"
+          ],
+          "learning_objectives": [
+            "Suggest solutions to social problems"
+          ],
+          "common_misconceptions": [
+            "Thinking problems are unsolvable"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "subject_name": "Physical and Health Education",
+  "class_level": "JSS1",
+  "exam_relevance": [
+    "BECE",
+    "Junior WAEC"
+  ],
+  "description": "Junior Secondary School 1 PHE - Physical fitness, sports, health education, and hygiene",
+  "waec_high_priority_topics": [],
+  "topics": [
+    {
+      "title": "Physical Fitness",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Components and Benefits",
+          "concepts": [
+            "Meaning of physical fitness",
+            "Components of fitness",
+            "Benefits of exercise",
+            "Warm-up and cool-down",
+            "Fitness tests"
+          ],
+          "learning_objectives": [
+            "Define physical fitness",
+            "Demonstrate warm-up exercises"
+          ],
+          "common_misconceptions": [
+            "Thinking exercise is only for athletes",
+            "Skipping warm-up"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Track and Field Events",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Athletics",
+          "concepts": [
+            "Sprints",
+            "Middle distance races",
+            "Long jump",
+            "High jump",
+            "Relay races"
+          ],
+          "learning_objectives": [
+            "Demonstrate basic athletic skills",
+            "Explain rules of track events"
+          ],
+          "common_misconceptions": [
+            "Thinking long jump is about height",
+            "Running without technique"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ball Games",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Football and Basketball",
+          "concepts": [
+            "History of football",
+            "Rules of football",
+            "Skills in football",
+            "Basketball basics",
+            "Teamwork in sports"
+          ],
+          "learning_objectives": [
+            "Play football and basketball correctly",
+            "Demonstrate basic skills"
+          ],
+          "common_misconceptions": [
+            "Using hands in football",
+            "Thinking basketball is only about height"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Personal Hygiene",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Health and Cleanliness",
+          "concepts": [
+            "Meaning of hygiene",
+            "Daily hygiene practices",
+            "Oral hygiene",
+            "Care of skin, hair, nails",
+            "Sanitation"
+          ],
+          "learning_objectives": [
+            "Explain importance of hygiene",
+            "Demonstrate proper hygiene practices"
+          ],
+          "common_misconceptions": [
+            "Thinking bathing once is enough",
+            "Not brushing teeth regularly"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Swimming",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Basic Swimming Skills",
+          "concepts": [
+            "Safety in water",
+            "Floating",
+            "Basic strokes",
+            "Breathing techniques",
+            "Water safety rules"
+          ],
+          "learning_objectives": [
+            "Demonstrate floating",
+            "Practice basic swimming strokes"
+          ],
+          "common_misconceptions": [
+            "Thinking everyone can swim naturally",
+            "Swimming immediately after eating"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "First Aid",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Basic First Aid",
+          "concepts": [
+            "Meaning of first aid",
+            "First aid kit contents",
+            "Treating cuts and wounds",
+            "Burns treatment",
+            "CPR basics"
+          ],
+          "learning_objectives": [
+            "List first aid kit items",
+            "Apply basic first aid"
+          ],
+          "common_misconceptions": [
+            "Putting oil on burns",
+            "Moving injured person carelessly"
+          ]
+        }
+      ]
+    }
+  ]
+}

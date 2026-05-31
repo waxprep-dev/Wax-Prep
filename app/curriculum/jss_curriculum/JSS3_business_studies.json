@@ -1,0 +1,154 @@
+{
+  "subject_name": "Business Studies",
+  "class_level": "JSS3",
+  "exam_relevance": [
+    "BECE",
+    "Junior WAEC"
+  ],
+  "description": "Junior Secondary School 3 Business Studies - BECE preparation: commerce, bookkeeping, entrepreneurship",
+  "waec_high_priority_topics": [
+    "Commerce",
+    "Book Keeping",
+    "Trade",
+    "Consumer Education"
+  ],
+  "topics": [
+    {
+      "title": "Commerce",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Trade and Aids to Trade",
+          "concepts": [
+            "Home trade",
+            "Foreign trade",
+            "Wholesale trade",
+            "Retail trade",
+            "Aids to trade"
+          ],
+          "learning_objectives": [
+            "Explain commerce and trade"
+          ],
+          "common_misconceptions": [
+            "Confusing commerce with business"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Book Keeping",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Accounting Records",
+          "concepts": [
+            "Double entry",
+            "Ledger accounts",
+            "Trial balance",
+            "Cash book",
+            "Trading account"
+          ],
+          "learning_objectives": [
+            "Prepare basic accounting records"
+          ],
+          "common_misconceptions": [
+            "Confusing debit with credit"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Entrepreneurship",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Starting a Business",
+          "concepts": [
+            "Business idea",
+            "Market research",
+            "Business plan",
+            "Capital",
+            "Marketing"
+          ],
+          "learning_objectives": [
+            "Develop a business plan"
+          ],
+          "common_misconceptions": [
+            "Thinking business needs lots of money"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Consumer Education",
+      "term": 2,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Consumer Rights",
+          "concepts": [
+            "Rights of consumers",
+            "Consumer protection",
+            "Redress mechanisms",
+            "Standard organization"
+          ],
+          "learning_objectives": [
+            "Explain consumer rights"
+          ],
+          "common_misconceptions": [
+            "Thinking consumers have no power"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Office Practice",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Office Procedures",
+          "concepts": [
+            "Office layout",
+            "Filing system",
+            "Correspondence",
+            "Meetings",
+            "Telephone etiquette"
+          ],
+          "learning_objectives": [
+            "Describe office procedures"
+          ],
+          "common_misconceptions": [
+            "Thinking filing is not important"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Keyboarding",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Typing Skills",
+          "concepts": [
+            "Speed",
+            "Accuracy",
+            "Document production",
+            "Tables",
+            "Letters"
+          ],
+          "learning_objectives": [
+            "Type accurately and quickly"
+          ],
+          "common_misconceptions": [
+            "Sacrificing accuracy for speed"
+          ]
+        }
+      ]
+    }
+  ]
+}

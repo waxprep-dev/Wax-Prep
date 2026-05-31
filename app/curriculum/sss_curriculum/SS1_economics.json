@@ -1,0 +1,243 @@
+{
+  "subject_name": "Economics",
+  "class_level": "SS1",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "Senior Secondary School 1 Economics - Basic concepts, demand/supply, production, market structures",
+  "waec_high_priority_topics": [
+    "Demand and Supply",
+    "Production",
+    "Market Structures",
+    "Money and Banking"
+  ],
+  "topics": [
+    {
+      "title": "Introduction to Economics",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Basic Concepts",
+          "concepts": [
+            "Definition of economics",
+            "Scarcity, choice, opportunity cost",
+            "Basic economic problems",
+            "Economics as a science/art"
+          ],
+          "learning_objectives": [
+            "Explain fundamental economic concepts"
+          ],
+          "common_misconceptions": [
+            "Economics is only about money"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Theory of Demand",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Demand Analysis",
+          "concepts": [
+            "Law of demand",
+            "Demand schedule and curve",
+            "Factors affecting demand",
+            "Change in demand vs quantity demanded",
+            "Individual and market demand"
+          ],
+          "learning_objectives": [
+            "Draw and interpret demand curves"
+          ],
+          "common_misconceptions": [
+            "Demand = want",
+            "Price is only factor affecting demand"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Theory of Supply",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Supply Analysis",
+          "concepts": [
+            "Law of supply",
+            "Supply schedule and curve",
+            "Factors affecting supply",
+            "Change in supply vs quantity supplied"
+          ],
+          "learning_objectives": [
+            "Draw and interpret supply curves"
+          ],
+          "common_misconceptions": [
+            "Supply = stock"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Price Determination",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Market Equilibrium",
+          "concepts": [
+            "Equilibrium price and quantity",
+            "Effects of changes in demand/supply",
+            "Price controls (maximum/minimum)",
+            "Elasticity of demand and supply"
+          ],
+          "learning_objectives": [
+            "Determine equilibrium price"
+          ],
+          "common_misconceptions": [
+            "Price is always set by government"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Production",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Theory of Production",
+          "concepts": [
+            "Factors of production (land, labor, capital, entrepreneur)",
+            "Production function",
+            "Law of diminishing returns",
+            "Scale of production"
+          ],
+          "learning_objectives": [
+            "Explain production concepts"
+          ],
+          "common_misconceptions": [
+            "Land is only physical ground"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Market Structures",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Types of Markets",
+          "concepts": [
+            "Perfect competition",
+            "Monopoly",
+            "Oligopoly",
+            "Monopolistic competition",
+            "Features and price-output determination"
+          ],
+          "learning_objectives": [
+            "Compare market structures"
+          ],
+          "common_misconceptions": [
+            "Monopoly always charges highest price"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Money and Banking",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Monetary Economics",
+          "concepts": [
+            "Origin and functions of money",
+            "Types of money",
+            "Central bank functions",
+            "Commercial banks",
+            "Monetary policy"
+          ],
+          "learning_objectives": [
+            "Explain role of money and banks"
+          ],
+          "common_misconceptions": [
+            "Money must be physical"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Population",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Population Studies",
+          "concepts": [
+            "Population size and growth",
+            "Population theories (Malthusian)",
+            "Population distribution",
+            "Population policy in Nigeria"
+          ],
+          "learning_objectives": [
+            "Analyze population trends"
+          ],
+          "common_misconceptions": [
+            "More population is always bad"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "National Income",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Measuring Economic Performance",
+          "concepts": [
+            "GDP, GNP, NNP",
+            "Methods of measuring national income",
+            "Problems of measurement",
+            "Uses of national income data"
+          ],
+          "learning_objectives": [
+            "Calculate national income"
+          ],
+          "common_misconceptions": [
+            "GDP = standard of living"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Trade",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Trade Between Nations",
+          "concepts": [
+            "Reasons for trade",
+            "Absolute and comparative advantage",
+            "Balance of trade/payments",
+            "Trade protection",
+            "ECOWAS"
+          ],
+          "learning_objectives": [
+            "Explain basis of international trade"
+          ],
+          "common_misconceptions": [
+            "Trade deficit is always bad"
+          ]
+        }
+      ]
+    }
+  ]
+}

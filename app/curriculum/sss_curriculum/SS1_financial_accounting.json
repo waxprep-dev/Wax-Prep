@@ -1,0 +1,244 @@
+{
+  "subject_name": "Financial Accounting",
+  "class_level": "SS1",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "Senior Secondary School 1 Financial Accounting - Book keeping, final accounts, accounting concepts",
+  "waec_high_priority_topics": [
+    "Double Entry",
+    "Final Accounts",
+    "Bank Reconciliation",
+    "Depreciation"
+  ],
+  "topics": [
+    {
+      "title": "Introduction to Accounting",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Basics",
+          "concepts": [
+            "Meaning and importance",
+            "Users of accounting information",
+            "Accounting principles and concepts",
+            "Qualities of accounting information"
+          ],
+          "learning_objectives": [
+            "Explain purpose of accounting"
+          ],
+          "common_misconceptions": [
+            "Accounting is just mathematics"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Book Keeping",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Double Entry",
+          "concepts": [
+            "Principles of double entry",
+            "Source documents",
+            "Books of original entry",
+            "Ledger accounts",
+            "Trial balance"
+          ],
+          "learning_objectives": [
+            "Apply double entry principles"
+          ],
+          "common_misconceptions": [
+            "Debit always means decrease"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cash Book",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Recording Cash Transactions",
+          "concepts": [
+            "Single column cash book",
+            "Double column cash book",
+            "Three column cash book",
+            "Discounts (cash and trade)",
+            "Contra entries"
+          ],
+          "learning_objectives": [
+            "Prepare cash books"
+          ],
+          "common_misconceptions": [
+            "Cash book is only for cash"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bank Reconciliation",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Reconciling Bank Statements",
+          "concepts": [
+            "Reasons for differences",
+            "Unpresented cheques",
+            "Uncredited deposits",
+            "Bank charges and errors",
+            "Preparation of reconciliation statement"
+          ],
+          "learning_objectives": [
+            "Prepare bank reconciliation statements"
+          ],
+          "common_misconceptions": [
+            "Bank statement is always correct"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Final Accounts",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Trading, Profit and Loss",
+          "concepts": [
+            "Trading account",
+            "Profit and loss account",
+            "Balance sheet",
+            "Adjustments (accruals, prepayments, bad debts, depreciation)"
+          ],
+          "learning_objectives": [
+            "Prepare final accounts"
+          ],
+          "common_misconceptions": [
+            "Net profit is cash in hand"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Depreciation",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Fixed Asset Depreciation",
+          "concepts": [
+            "Meaning and causes",
+            "Straight line method",
+            "Reducing balance method",
+            "Provision for depreciation account"
+          ],
+          "learning_objectives": [
+            "Calculate depreciation"
+          ],
+          "common_misconceptions": [
+            "Depreciation is setting aside cash"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Control Accounts",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Sales and Purchases Ledgers",
+          "concepts": [
+            "Meaning and purpose",
+            "Sales ledger control account",
+            "Purchases ledger control account",
+            "Preparation"
+          ],
+          "learning_objectives": [
+            "Prepare control accounts"
+          ],
+          "common_misconceptions": [
+            "Control accounts are actual ledgers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Partnership Accounts",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Partnership Accounting",
+          "concepts": [
+            "Partnership agreement",
+            "Appropriation account",
+            "Capital and current accounts",
+            "Goodwill",
+            "Admission/retirement of partners"
+          ],
+          "learning_objectives": [
+            "Prepare partnership accounts"
+          ],
+          "common_misconceptions": [
+            "All partners share profits equally"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Manufacturing Accounts",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Cost of Production",
+          "concepts": [
+            "Direct materials",
+            "Direct labor",
+            "Direct expenses",
+            "Factory overheads",
+            "Work in progress",
+            "Manufacturing account"
+          ],
+          "learning_objectives": [
+            "Prepare manufacturing accounts"
+          ],
+          "common_misconceptions": [
+            "Manufacturing is same as trading"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Single Entry and Incomplete Records",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Conversion to Double Entry",
+          "concepts": [
+            "Meaning of single entry",
+            "Statement of affairs",
+            "Conversion method",
+            "Calculation of profit/loss"
+          ],
+          "learning_objectives": [
+            "Convert single to double entry"
+          ],
+          "common_misconceptions": [
+            "Single entry means one entry only"
+          ]
+        }
+      ]
+    }
+  ]
+}

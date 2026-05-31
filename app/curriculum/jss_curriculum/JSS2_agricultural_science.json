@@ -1,0 +1,155 @@
+{
+  "subject_name": "Agricultural Science",
+  "class_level": "JSS2",
+  "exam_relevance": [
+    "BECE",
+    "Junior WAEC"
+  ],
+  "description": "Junior Secondary School 2 Agricultural Science - Crop production, animal husbandry, soil management",
+  "waec_high_priority_topics": [],
+  "topics": [
+    {
+      "title": "Soil Management",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Soil Fertility",
+          "concepts": [
+            "Soil nutrients",
+            "Organic manure",
+            "Inorganic fertilizers",
+            "Composting",
+            "Crop rotation"
+          ],
+          "learning_objectives": [
+            "Improve soil fertility",
+            "Prepare compost"
+          ],
+          "common_misconceptions": [
+            "Thinking chemical fertilizers are always better"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Crop Production",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Arable Crops",
+          "concepts": [
+            "Cereal crops",
+            "Legumes",
+            "Vegetables",
+            "Fruits",
+            "Planting methods"
+          ],
+          "learning_objectives": [
+            "Grow common crops",
+            "Describe planting procedures"
+          ],
+          "common_misconceptions": [
+            "Thinking all crops need same care"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Farm Animals",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Animal Husbandry",
+          "concepts": [
+            "Cattle",
+            "Goats and sheep",
+            "Poultry",
+            "Pigs",
+            "Rabbits"
+          ],
+          "learning_objectives": [
+            "Care for farm animals",
+            "Describe animal needs"
+          ],
+          "common_misconceptions": [
+            "Thinking all animals eat the same food"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pests and Diseases",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Crop and Animal Pests",
+          "concepts": [
+            "Insect pests",
+            "Diseases of crops",
+            "Diseases of animals",
+            "Control methods",
+            "Integrated pest management"
+          ],
+          "learning_objectives": [
+            "Identify common pests",
+            "Suggest control measures"
+          ],
+          "common_misconceptions": [
+            "Using pesticides excessively"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Agricultural Economics",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Farm Business",
+          "concepts": [
+            "Farm records",
+            "Cost analysis",
+            "Marketing",
+            "Cooperatives",
+            "Agricultural insurance"
+          ],
+          "learning_objectives": [
+            "Keep farm records",
+            "Analyze farm costs"
+          ],
+          "common_misconceptions": [
+            "Thinking small farms don't need records"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Forest and Wildlife",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Conservation",
+          "concepts": [
+            "Importance of forests",
+            "Wildlife management",
+            "Game reserves",
+            "Deforestation effects",
+            "Agroforestry"
+          ],
+          "learning_objectives": [
+            "Explain importance of conservation"
+          ],
+          "common_misconceptions": [
+            "Thinking forests are only for timber"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "subject_name": "Economics",
+  "class_level": "SS2",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "SS2 Economics - Money and banking, international trade, economic development, public finance",
+  "waec_high_priority_topics": [
+    "Money and Banking",
+    "International Trade",
+    "Economic Development",
+    "Public Finance"
+  ],
+  "topics": [
+    {
+      "title": "Money and Banking",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Monetary Economics",
+          "concepts": [
+            "Evolution of money",
+            "Functions",
+            "Types",
+            "Central bank (CBN)",
+            "Commercial banks",
+            "Monetary policy"
+          ],
+          "learning_objectives": [
+            "Explain monetary policy"
+          ],
+          "common_misconceptions": [
+            "Money must be physical"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Trade",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Trade Theory",
+          "concepts": [
+            "Comparative advantage",
+            "Terms of trade",
+            "Balance of payments",
+            "Trade protection",
+            "Exchange rates"
+          ],
+          "learning_objectives": [
+            "Explain trade theories"
+          ],
+          "common_misconceptions": [
+            "Trade deficit is always bad"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic Development",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Development Economics",
+          "concepts": [
+            "Growth vs development",
+            "Indicators (HDI, GDP, GNP)",
+            "Obstacles to development",
+            "Development planning",
+            "MDGs/SDGs"
+          ],
+          "learning_objectives": [
+            "Distinguish growth from development"
+          ],
+          "common_misconceptions": [
+            "GDP growth means development"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Public Finance",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Government Finance",
+          "concepts": [
+            "Public revenue",
+            "Public expenditure",
+            "Budget (balanced, surplus, deficit)",
+            "Taxation",
+            "Public debt"
+          ],
+          "learning_objectives": [
+            "Analyze government budget"
+          ],
+          "common_misconceptions": [
+            "Government budget like household budget"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Agriculture",
+      "term": 2,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Agricultural Economics",
+          "concepts": [
+            "Role in economy",
+            "Problems",
+            "Policies",
+            "Marketing boards"
+          ],
+          "learning_objectives": [
+            "Evaluate agricultural policies"
+          ],
+          "common_misconceptions": [
+            "Agriculture is primitive"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Industry",
+      "term": 2,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Industrialization",
+          "concepts": [
+            "Types of industry",
+            "Industrial location",
+            "Problems of industrialization",
+            "Privatization/commercialization"
+          ],
+          "learning_objectives": [
+            "Suggest industrial policies"
+          ],
+          "common_misconceptions": [
+            "Industry means manufacturing only"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Population",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Population Economics",
+          "concepts": [
+            "Theories (Malthusian, demographic transition)",
+            "Population policy",
+            "Migration",
+            "Brain drain"
+          ],
+          "learning_objectives": [
+            "Evaluate population theories"
+          ],
+          "common_misconceptions": [
+            "Population growth is always bad"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "National Income",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Income Accounting",
+          "concepts": [
+            "GDP, GNP, NDP, NNP",
+            "Income measurement methods",
+            "Limitations",
+            "Use"
+          ],
+          "learning_objectives": [
+            "Calculate national income"
+          ],
+          "common_misconceptions": [
+            "High GDP means high living standards"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economy of Nigeria",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Nigerian Economy",
+          "concepts": [
+            "Structure",
+            "Challenges",
+            "Economic reforms",
+            "Vision 20:2020",
+            " diversification"
+          ],
+          "learning_objectives": [
+            "Analyze Nigerian economy"
+          ],
+          "common_misconceptions": [
+            "Oil is the only problem"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Econometrics",
+      "term": 3,
+      "waec_frequency": "low",
+      "subtopics": [
+        {
+          "title": "Basic Statistics",
+          "concepts": [
+            "Data collection",
+            "Presentation",
+            "Measures of central tendency"
+          ],
+          "learning_objectives": [
+            "Use basic statistics"
+          ],
+          "common_misconceptions": [
+            "Statistics is only for experts"
+          ]
+        }
+      ]
+    }
+  ]
+}

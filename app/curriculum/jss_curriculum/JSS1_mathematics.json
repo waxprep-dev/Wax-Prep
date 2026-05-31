@@ -1,0 +1,213 @@
+{
+  "subject_name": "Mathematics",
+  "class_level": "JSS1",
+  "exam_relevance": ["BECE", "Junior WAEC"],
+  "description": "Junior Secondary School 1 Mathematics - Foundation topics covering number systems, basic algebra, geometry, and statistics",
+  "waec_high_priority_topics": [],
+  "topics": [
+    {
+      "title": "Whole Numbers",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Number Bases and Place Value",
+          "concepts": ["Units, tens, hundreds, thousands", "Millions, billions", "Place value chart", "Expanded notation", "Writing numbers in words and figures"],
+          "learning_objectives": ["Read and write numbers up to one billion", "Identify place value of digits in numbers", "Express numbers in expanded form"],
+          "common_misconceptions": ["Confusing place value with face value", "Difficulty reading large numbers with zeros"]
+        },
+        {
+          "title": "Counting and Writing Numbers",
+          "concepts": ["Natural numbers", "Counting in groups (2s, 3s, 5s, 10s)", "Odd and even numbers", "Prime numbers", "Composite numbers"],
+          "learning_objectives": ["Identify odd and even numbers", "List prime numbers up to 100", "Count in multiples"],
+          "common_misconceptions": ["Thinking 1 is a prime number", "Confusing odd numbers with prime numbers"]
+        }
+      ]
+    },
+    {
+      "title": "Fractions",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Types of Fractions",
+          "concepts": ["Proper fractions", "Improper fractions", "Mixed numbers", "Equivalent fractions", "Lowest common denominator"],
+          "learning_objectives": ["Convert between improper fractions and mixed numbers", "Find equivalent fractions", "Compare and order fractions"],
+          "common_misconceptions": ["Thinking larger denominators mean larger fractions", "Difficulty converting mixed numbers to improper fractions"]
+        },
+        {
+          "title": "Operations on Fractions",
+          "concepts": ["Addition of fractions", "Subtraction of fractions", "Multiplication of fractions", "Division of fractions", "Word problems involving fractions"],
+          "learning_objectives": ["Add and subtract fractions with different denominators", "Multiply fractions by fractions and whole numbers", "Divide fractions by fractions and whole numbers"],
+          "common_misconceptions": ["Adding numerators and denominators directly", "Forgetting to invert when dividing fractions"]
+        }
+      ]
+    },
+    {
+      "title": "Decimals",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Decimal Notation and Operations",
+          "concepts": ["Tenths, hundredths, thousandths", "Converting fractions to decimals", "Converting decimals to fractions", "Addition and subtraction of decimals", "Multiplication and division of decimals"],
+          "learning_objectives": ["Convert between fractions and decimals", "Perform all four operations on decimals", "Round decimals to specified places"],
+          "common_misconceptions": ["Misaligning decimal points in addition", "Confusion about decimal place movement in multiplication"]
+        }
+      ]
+    },
+    {
+      "title": "Percentages",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Percentage Concepts and Calculations",
+          "concepts": ["Meaning of percentage", "Converting percentages to fractions", "Converting percentages to decimals", "Finding percentage of a quantity", "Expressing one quantity as percentage of another"],
+          "learning_objectives": ["Convert between percentages, fractions, and decimals", "Calculate percentage of a given amount", "Solve word problems involving percentages"],
+          "common_misconceptions": ["Thinking percentage always means out of 100 only", "Confusing percentage increase with percentage of"]
+        }
+      ]
+    },
+    {
+      "title": "LCM and HCF",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Lowest Common Multiple",
+          "concepts": ["Multiples of numbers", "Common multiples", "LCM by listing method", "LCM by prime factorization", "LCM by division method"],
+          "learning_objectives": ["Find multiples of any number", "Determine LCM of two or more numbers using different methods"],
+          "common_misconceptions": ["Confusing LCM with HCF", "Stopping at the first common multiple"]
+        },
+        {
+          "title": "Highest Common Factor",
+          "concepts": ["Factors of numbers", "Common factors", "HCF by listing method", "HCF by prime factorization", "HCF by division method"],
+          "learning_objectives": ["Find all factors of a number", "Determine HCF of two or more numbers", "Apply LCM and HCF to real-life problems"],
+          "common_misconceptions": ["Missing some factors when listing", "Confusing factors with multiples"]
+        }
+      ]
+    },
+    {
+      "title": "Approximation and Estimation",
+      "term": 2,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Rounding Numbers",
+          "concepts": ["Rounding to nearest 10, 100, 1000", "Rounding to decimal places", "Rounding to significant figures", "Estimation", "Approximation in real life"],
+          "learning_objectives": ["Round numbers to required accuracy", "Estimate answers to calculations", "Check reasonableness of answers"],
+          "common_misconceptions": ["Rounding 5 down instead of up", "Confusing decimal places with significant figures"]
+        }
+      ]
+    },
+    {
+      "title": "Algebraic Expressions",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Introduction to Algebra",
+          "concepts": ["Use of letters for numbers", "Algebraic terms", "Coefficients", "Like terms and unlike terms", "Simplifying expressions"],
+          "learning_objectives": ["Write statements in algebraic form", "Identify like and unlike terms", "Simplify algebraic expressions by collecting like terms"],
+          "common_misconceptions": ["Treating letters as standing for objects rather than numbers", "Adding coefficients of unlike terms"]
+        },
+        {
+          "title": "Simple Equations",
+          "concepts": ["Meaning of equation", "Balancing method", "Solving linear equations", "Equations with brackets", "Word problems leading to equations"],
+          "learning_objectives": ["Solve simple linear equations", "Check solutions by substitution", "Form and solve equations from word problems"],
+          "common_misconceptions": ["Applying operations to only one side of equation", "Confusing expressions with equations"]
+        }
+      ]
+    },
+    {
+      "title": "Geometry - Lines and Angles",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Lines and Line Segments",
+          "concepts": ["Types of lines (straight, curved, parallel, perpendicular)", "Line segments and rays", "Horizontal and vertical lines", "Intersecting lines"],
+          "learning_objectives": ["Identify different types of lines", "Draw parallel and perpendicular lines", "Name lines using points"],
+          "common_misconceptions": ["Confusing line segments with lines", "Thinking parallel lines must be equal in length"]
+        },
+        {
+          "title": "Angles",
+          "concepts": ["Definition of an angle", "Types of angles (acute, obtuse, right, reflex, straight)", "Measuring angles with protractor", "Drawing angles", "Angles at a point", "Angles on a straight line"],
+          "learning_objectives": ["Identify and classify angles by size", "Measure and draw angles accurately", "Calculate unknown angles using angle properties"],
+          "common_misconceptions": ["Reading protractor scale incorrectly", "Thinking angle size depends on arm length"]
+        }
+      ]
+    },
+    {
+      "title": "Polygons",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Types of Polygons",
+          "concepts": ["Definition of polygon", "Triangles (equilateral, isosceles, scalene)", "Quadrilaterals (square, rectangle, parallelogram, rhombus, trapezium, kite)", "Properties of triangles", "Properties of quadrilaterals", "Sum of angles in a triangle", "Sum of angles in a quadrilateral"],
+          "learning_objectives": ["Name and classify polygons by number of sides", "Identify properties of different triangles and quadrilaterals", "Calculate unknown angles in triangles and quadrilaterals"],
+          "common_misconceptions": ["Thinking all triangles have a right angle", "Confusing parallelogram with rectangle"]
+        }
+      ]
+    },
+    {
+      "title": "Mensuration",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Perimeter",
+          "concepts": ["Perimeter of squares and rectangles", "Perimeter of triangles", "Perimeter of compound shapes", "Real-life applications"],
+          "learning_objectives": ["Calculate perimeter of various shapes", "Solve word problems involving perimeter"],
+          "common_misconceptions": ["Forgetting to add all sides", "Using wrong units"]
+        },
+        {
+          "title": "Area",
+          "concepts": ["Area of rectangles and squares", "Area of triangles", "Area of compound shapes", "Relationship between square units"],
+          "learning_objectives": ["Calculate area of rectangles, squares, and triangles", "Find area of compound shapes", "Convert between square units"],
+          "common_misconceptions": ["Using perimeter formula for area", "Confusing square cm with cm"]
+        }
+      ]
+    },
+    {
+      "title": "Statistics - Data Collection",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Data and Data Collection",
+          "concepts": ["Meaning of data", "Sources of data", "Methods of data collection", "Tally marks", "Frequency tables"],
+          "learning_objectives": ["Collect data using tally marks", "Organize data into frequency tables", "Interpret simple data"],
+          "common_misconceptions": ["Confusing tally marks", "Miscounting frequencies"]
+        },
+        {
+          "title": "Graphical Representation",
+          "concepts": ["Pictograms", "Bar charts", "Pie charts", "Line graphs", "Reading and interpreting graphs"],
+          "learning_objectives": ["Draw and interpret pictograms, bar charts, and pie charts", "Extract information from graphs"],
+          "common_misconceptions": ["Drawing bars of unequal width", "Incorrect scaling"]
+        }
+      ]
+    },
+    {
+      "title": "Ratio and Proportion",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Ratio",
+          "concepts": ["Meaning of ratio", "Simplifying ratios", "Dividing quantities in a given ratio", "Ratio in real life"],
+          "learning_objectives": ["Express relationships as ratios", "Simplify ratios to lowest terms", "Share quantities in given ratios"],
+          "common_misconceptions": ["Not simplifying ratios fully", "Adding ratios directly"]
+        },
+        {
+          "title": "Proportion",
+          "concepts": ["Direct proportion", "Inverse proportion", "Unitary method", "Word problems on proportion"],
+          "learning_objectives": ["Solve problems involving direct and inverse proportion", "Apply unitary method to real-life situations"],
+          "common_misconceptions": ["Confusing direct and inverse proportion", "Incorrect cross-multiplication"]
+        }
+      ]
+    }
+  ]
+}

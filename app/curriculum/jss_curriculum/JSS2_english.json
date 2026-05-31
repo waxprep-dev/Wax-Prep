@@ -1,0 +1,212 @@
+{
+  "subject_name": "English Studies",
+  "class_level": "JSS2",
+  "exam_relevance": [
+    "BECE",
+    "Junior WAEC"
+  ],
+  "description": "Junior Secondary School 2 English - Advanced grammar, comprehension, composition, and literature",
+  "waec_high_priority_topics": [],
+  "topics": [
+    {
+      "title": "Verbs and Tenses",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Advanced Tense Usage",
+          "concepts": [
+            "Present perfect continuous",
+            "Past perfect",
+            "Future perfect",
+            "Sequence of tenses",
+            "Active and passive voice"
+          ],
+          "learning_objectives": [
+            "Use advanced tenses correctly",
+            "Convert active to passive voice"
+          ],
+          "common_misconceptions": [
+            "Using present perfect with specific past time",
+            "Confusing past perfect with simple past"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Reported Speech",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Direct and Indirect Speech",
+          "concepts": [
+            "Rules for changing direct to indirect",
+            "Tense changes",
+            "Pronoun changes",
+            "Time and place changes",
+            "Reporting questions and commands"
+          ],
+          "learning_objectives": [
+            "Convert direct speech to reported speech",
+            "Apply all rules of conversion"
+          ],
+          "common_misconceptions": [
+            "Not changing tenses",
+            "Forgetting to change pronouns"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Comprehension Skills",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Advanced Reading",
+          "concepts": [
+            "Reading for main idea",
+            "Reading for details",
+            "Inference",
+            "Critical reading",
+            "Summary writing"
+          ],
+          "learning_objectives": [
+            "Answer comprehension questions accurately",
+            "Write good summaries"
+          ],
+          "common_misconceptions": [
+            "Copying from text instead of answering",
+            "Not supporting answers with evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Composition Writing",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Formal and Informal Essays",
+          "learning_objectives": [
+            "Write different types of essays",
+            "Use appropriate format for each type"
+          ],
+          "common_misconceptions": [
+            "Mixing formal and informal styles",
+            "Not planning before writing"
+          ],
+          "concepts": [
+            "Argumentative essays",
+            "Expository essays",
+            "Story writing",
+            "Letter writing (formal and informal)",
+            "Speech writing"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Parts of Speech Review",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Advanced Grammar",
+          "concepts": [
+            "Prepositions",
+            "Conjunctions",
+            "Interjections",
+            "Determiners",
+            "Articles"
+          ],
+          "learning_objectives": [
+            "Use parts of speech correctly",
+            "Identify all parts of speech in sentences"
+          ],
+          "common_misconceptions": [
+            "Using wrong prepositions",
+            "Confusing conjunctions with prepositions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vocabulary Development",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Word Study",
+          "concepts": [
+            "Prefixes and suffixes",
+            "Synonyms and antonyms",
+            "Homophones",
+            "Idioms and proverbs",
+            "Word register"
+          ],
+          "learning_objectives": [
+            "Build vocabulary through word analysis",
+            "Use idioms correctly"
+          ],
+          "common_misconceptions": [
+            "Using idioms literally",
+            "Confusing homophones"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Literature",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Literary Analysis",
+          "concepts": [
+            "Elements of prose",
+            "Elements of poetry",
+            "Figures of speech",
+            "Themes",
+            "Characterization"
+          ],
+          "learning_objectives": [
+            "Analyze literary texts",
+            "Identify literary devices"
+          ],
+          "common_misconceptions": [
+            "Confusing theme with plot",
+            "Thinking all poems must rhyme"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Oral English",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Phonetics",
+          "concepts": [
+            "Vowel sounds",
+            "Consonant sounds",
+            "Stress patterns",
+            "Intonation",
+            "Transcription"
+          ],
+          "learning_objectives": [
+            "Pronounce words correctly",
+            "Use correct stress and intonation"
+          ],
+          "common_misconceptions": [
+            "Pronouncing silent letters",
+            "Using vernacular stress patterns"
+          ]
+        }
+      ]
+    }
+  ]
+}

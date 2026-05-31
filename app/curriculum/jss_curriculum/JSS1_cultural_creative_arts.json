@@ -1,0 +1,161 @@
+{
+  "subject_name": "Cultural and Creative Arts",
+  "class_level": "JSS1",
+  "exam_relevance": [
+    "BECE",
+    "Junior WAEC"
+  ],
+  "description": "Junior Secondary School 1 CCA - Visual arts, music, drama, and Nigerian culture",
+  "waec_high_priority_topics": [],
+  "topics": [
+    {
+      "title": "Introduction to Arts",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Types and Functions of Art",
+          "concepts": [
+            "Visual arts",
+            "Performing arts",
+            "Literary arts",
+            "Functions of art in society",
+            "Nigerian art forms"
+          ],
+          "learning_objectives": [
+            "Identify types of arts",
+            "Explain functions of art"
+          ],
+          "common_misconceptions": [
+            "Thinking art is only drawing",
+            "Believing art has no practical value"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Elements of Art",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Basic Elements",
+          "concepts": [
+            "Line",
+            "Color",
+            "Shape",
+            "Texture",
+            "Form",
+            "Space",
+            "Value"
+          ],
+          "learning_objectives": [
+            "Identify elements of art",
+            "Use elements in artwork"
+          ],
+          "common_misconceptions": [
+            "Confusing shape with form",
+            "Thinking color is only paint"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Drawing",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Drawing Techniques",
+          "concepts": [
+            "Types of drawing",
+            "Still life drawing",
+            "Nature drawing",
+            "Perspective",
+            "Shading techniques"
+          ],
+          "learning_objectives": [
+            "Demonstrate drawing skills",
+            "Use shading techniques"
+          ],
+          "common_misconceptions": [
+            "Thinking drawing is only talent",
+            "Not using light and shadow"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Music",
+      "term": 2,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Music Basics",
+          "concepts": [
+            "Elements of music",
+            "Types of Nigerian music",
+            "Musical instruments",
+            "Folk songs",
+            "Rhythm and melody"
+          ],
+          "learning_objectives": [
+            "Identify musical elements",
+            "Classify Nigerian music types"
+          ],
+          "common_misconceptions": [
+            "Thinking music is only singing"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Drama",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Introduction to Drama",
+          "concepts": [
+            "Elements of drama",
+            "Types of drama",
+            "Role playing",
+            "Costumes and makeup",
+            "Stage directions"
+          ],
+          "learning_objectives": [
+            "Participate in simple drama",
+            "Explain elements of drama"
+          ],
+          "common_misconceptions": [
+            "Confusing drama with real life"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Crafts",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Traditional Crafts",
+          "concepts": [
+            "Pottery",
+            "Weaving",
+            "Tie and dye",
+            "Bead making",
+            "Local materials for crafts"
+          ],
+          "learning_objectives": [
+            "Create simple crafts",
+            "Appreciate Nigerian crafts"
+          ],
+          "common_misconceptions": [
+            "Thinking crafts are outdated"
+          ]
+        }
+      ]
+    }
+  ]
+}

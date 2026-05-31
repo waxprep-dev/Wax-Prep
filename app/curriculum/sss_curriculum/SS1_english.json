@@ -1,0 +1,237 @@
+{
+  "subject_name": "English Language",
+  "class_level": "SS1",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "Senior Secondary School 1 English - Advanced grammar, essay writing, comprehension, summary",
+  "waec_high_priority_topics": [
+    "Essay Writing",
+    "Comprehension",
+    "Summary",
+    "Lexis and Structure",
+    "Oral English"
+  ],
+  "topics": [
+    {
+      "title": "Grammar - Parts of Speech",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Advanced Usage",
+          "concepts": [
+            "Nouns (types and functions)",
+            "Verbs (transitive, intransitive, auxiliary, modal)",
+            "Adjectives and adverbs",
+            "Prepositions",
+            "Conjunctions"
+          ],
+          "learning_objectives": [
+            "Use parts of speech correctly"
+          ],
+          "common_misconceptions": [
+            "Using adjectives where adverbs needed"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tenses",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "All Tenses",
+          "concepts": [
+            "Simple, continuous, perfect, perfect continuous",
+            "Present, past, future tenses",
+            "Sequence of tenses"
+          ],
+          "learning_objectives": [
+            "Use all tenses correctly"
+          ],
+          "common_misconceptions": [
+            "Using present continuous for habits"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sentence Structure",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Types and Patterns",
+          "concepts": [
+            "Simple, compound, complex sentences",
+            "Clauses and phrases",
+            "Direct and indirect objects"
+          ],
+          "learning_objectives": [
+            "Construct varied sentences"
+          ],
+          "common_misconceptions": [
+            "Comma splices in compound sentences"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Essay Writing",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Types of Essays",
+          "concepts": [
+            "Narrative",
+            "Descriptive",
+            "Argumentative",
+            "Expository",
+            "Article writing"
+          ],
+          "learning_objectives": [
+            "Write well-structured essays"
+          ],
+          "common_misconceptions": [
+            "Not planning before writing"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Comprehension",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Reading Skills",
+          "concepts": [
+            "Main idea and details",
+            "Inference and deduction",
+            "Critical evaluation",
+            "Contextual meaning"
+          ],
+          "learning_objectives": [
+            "Answer comprehension accurately"
+          ],
+          "common_misconceptions": [
+            "Copying directly from passage"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Summary Writing",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Summary Techniques",
+          "concepts": [
+            "Identifying main points",
+            "Paraphrasing",
+            "Conciseness",
+            "Word limit"
+          ],
+          "learning_objectives": [
+            "Write concise summaries"
+          ],
+          "common_misconceptions": [
+            "Including examples in summary"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lexis and Structure",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Vocabulary",
+          "concepts": [
+            "Synonyms and antonyms",
+            "Word formation",
+            "Idioms and proverbs",
+            "Register"
+          ],
+          "learning_objectives": [
+            "Use vocabulary in context"
+          ],
+          "common_misconceptions": [
+            "Using words without knowing register"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Oral English",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Phonetics",
+          "concepts": [
+            "Vowels and consonants",
+            "Stress patterns",
+            "Intonation",
+            "Transcription"
+          ],
+          "learning_objectives": [
+            "Use correct pronunciation"
+          ],
+          "common_misconceptions": [
+            "Mother tongue interference"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Letter Writing",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Formal and Informal",
+          "concepts": [
+            "Formal letter format",
+            "Informal letter format",
+            "Appropriate language"
+          ],
+          "learning_objectives": [
+            "Write letters in correct format"
+          ],
+          "common_misconceptions": [
+            "Contractions in formal letters"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Literature",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Literary Analysis",
+          "concepts": [
+            "Elements of drama, prose, poetry",
+            "Figures of speech",
+            "Themes"
+          ],
+          "learning_objectives": [
+            "Analyze literary texts"
+          ],
+          "common_misconceptions": [
+            "Confusing theme with plot"
+          ]
+        }
+      ]
+    }
+  ]
+}

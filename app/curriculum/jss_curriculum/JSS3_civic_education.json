@@ -1,0 +1,151 @@
+{
+  "subject_name": "Civic Education",
+  "class_level": "JSS3",
+  "exam_relevance": [
+    "BECE",
+    "Junior WAEC"
+  ],
+  "description": "Junior Secondary School 3 Civic Education - BECE preparation: citizenship, government, national values",
+  "waec_high_priority_topics": [
+    "Citizenship",
+    "Democracy",
+    "Human Rights",
+    "National Values"
+  ],
+  "topics": [
+    {
+      "title": "Citizenship",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Rights and Responsibilities",
+          "concepts": [
+            "Types of citizenship",
+            "Rights of citizens",
+            "Duties of citizens",
+            "Naturalization"
+          ],
+          "learning_objectives": [
+            "Explain citizenship rights and duties"
+          ],
+          "common_misconceptions": [
+            "Thinking rights are absolute"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Democracy",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Democratic Governance",
+          "concepts": [
+            "Meaning of democracy",
+            "Features of democracy",
+            "Electoral process",
+            "Political parties"
+          ],
+          "learning_objectives": [
+            "Explain democratic principles"
+          ],
+          "common_misconceptions": [
+            "Thinking democracy means no rules"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Government",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Levels of Government",
+          "concepts": [
+            "Federal government",
+            "State government",
+            "Local government",
+            "Functions of each level"
+          ],
+          "learning_objectives": [
+            "Describe government structure"
+          ],
+          "common_misconceptions": [
+            "Confusing state with federal"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "National Values",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Core Values",
+          "concepts": [
+            "Integrity",
+            "Discipline",
+            "Self-reliance",
+            "Patriotism",
+            "Respect"
+          ],
+          "learning_objectives": [
+            "Demonstrate national values"
+          ],
+          "common_misconceptions": [
+            "Thinking values are not important"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Social Issues",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Contemporary Problems",
+          "concepts": [
+            "Corruption",
+            "Drug abuse",
+            "Cultism",
+            "Human trafficking",
+            "Youth empowerment"
+          ],
+          "learning_objectives": [
+            "Suggest solutions to social issues"
+          ],
+          "common_misconceptions": [
+            "Blaming only government"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Human Rights",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Fundamental Rights",
+          "concepts": [
+            "Universal Declaration of Human Rights",
+            "Nigerian constitution",
+            "Child rights",
+            "Women rights"
+          ],
+          "learning_objectives": [
+            "Explain human rights"
+          ],
+          "common_misconceptions": [
+            "Thinking rights have no limits"
+          ]
+        }
+      ]
+    }
+  ]
+}

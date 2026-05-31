@@ -1,0 +1,218 @@
+{
+  "subject_name": "Geography",
+  "class_level": "SS2",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "SS2 Geography - Regional geography, economic geography, map work, environmental management",
+  "waec_high_priority_topics": [
+    "Regional Geography",
+    "Economic Geography",
+    "Map Work",
+    "Environmental Management"
+  ],
+  "topics": [
+    {
+      "title": "Regional Geography of Nigeria",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Nigerian Regions",
+          "concepts": [
+            "Physical regions",
+            "Cultural regions",
+            "Economic regions",
+            "Geopolitical zones"
+          ],
+          "learning_objectives": [
+            "Describe Nigerian regions"
+          ],
+          "common_misconceptions": [
+            "Geopolitical zones are the only regions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic Geography",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Economic Activities",
+          "concepts": [
+            "Agriculture",
+            "Mining",
+            "Manufacturing",
+            "Transportation",
+            "Trade"
+          ],
+          "learning_objectives": [
+            "Analyze economic activities"
+          ],
+          "common_misconceptions": [
+            "Agriculture is primitive everywhere"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Map Work",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Advanced Map Reading",
+          "concepts": [
+            "Ranging",
+            "Intervisibility",
+            "Cross-sections",
+            "Gradient calculation"
+          ],
+          "learning_objectives": [
+            "Interpret complex maps"
+          ],
+          "common_misconceptions": [
+            "Scale is always 1:1"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Environmental Management",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Conservation",
+          "concepts": [
+            "Environmental degradation",
+            "Pollution",
+            "Conservation methods",
+            "Environmental policies"
+          ],
+          "learning_objectives": [
+            "Suggest management strategies"
+          ],
+          "common_misconceptions": [
+            "Development and conservation are opposites"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Climate Change",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Global Warming",
+          "concepts": [
+            "Causes",
+            "Effects",
+            "Mitigation",
+            "Adaptation",
+            "International agreements"
+          ],
+          "learning_objectives": [
+            "Explain climate change"
+          ],
+          "common_misconceptions": [
+            "Climate change is not real"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Population Geography",
+      "term": 2,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Population Studies",
+          "concepts": [
+            "Distribution",
+            "Density",
+            "Migration",
+            "Urbanization"
+          ],
+          "learning_objectives": [
+            "Analyze population patterns"
+          ],
+          "common_misconceptions": [
+            "High density is always bad"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Agricultural Geography",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Farming Systems",
+          "concepts": [
+            "Types of farming",
+            "Agricultural regions",
+            "Land tenure",
+            "Agricultural problems"
+          ],
+          "learning_objectives": [
+            "Describe agricultural geography"
+          ],
+          "common_misconceptions": [
+            "All farming is the same"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Industrial Geography",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Industry",
+          "concepts": [
+            "Types of industry",
+            "Industrial location",
+            "Industrial zones in Nigeria"
+          ],
+          "learning_objectives": [
+            "Explain industrial distribution"
+          ],
+          "common_misconceptions": [
+            "Industry means factories only"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Transport Geography",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Transport Networks",
+          "concepts": [
+            "Road networks",
+            "Rail networks",
+            "Ports",
+            "Air transport",
+            "Problems"
+          ],
+          "learning_objectives": [
+            "Analyze transport systems"
+          ],
+          "common_misconceptions": [
+            "More roads solve all problems"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "subject_name": "Chemistry",
+  "class_level": "SS1",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "Senior Secondary School 1 Chemistry - Matter, atomic structure, chemical bonding, stoichiometry, periodic table",
+  "waec_high_priority_topics": [
+    "Atomic Structure",
+    "Chemical Bonding",
+    "Stoichiometry",
+    "Periodic Table",
+    "Acids, Bases and Salts"
+  ],
+  "topics": [
+    {
+      "title": "Introduction to Chemistry",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Nature of Chemistry",
+          "concepts": [
+            "Branches of chemistry",
+            "Scientific method in chemistry",
+            "Laboratory safety",
+            "Apparatus and equipment"
+          ],
+          "learning_objectives": [
+            "Identify laboratory apparatus",
+            "Follow safety rules"
+          ],
+          "common_misconceptions": [
+            "Chemistry is only about mixing chemicals",
+            "All chemicals are dangerous"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Matter",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "States and Properties",
+          "concepts": [
+            "States of matter",
+            "Kinetic theory",
+            "Changes of state",
+            "Diffusion",
+            "Brownian motion"
+          ],
+          "learning_objectives": [
+            "Explain states using kinetic theory"
+          ],
+          "common_misconceptions": [
+            "Particles in solids don't move",
+            "Air is not matter"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Elements, Compounds and Mixtures",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Classification of Matter",
+          "concepts": [
+            "Elements",
+            "Compounds",
+            "Mixtures",
+            "Separation techniques",
+            "Purity"
+          ],
+          "learning_objectives": [
+            "Classify matter",
+            "Use separation techniques"
+          ],
+          "common_misconceptions": [
+            "Compounds are mixtures",
+            "Mixtures can be represented by formulae"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Atomic Structure",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Structure of the Atom",
+          "concepts": [
+            "Subatomic particles",
+            "Atomic number and mass number",
+            "Isotopes",
+            "Electronic configuration",
+            "Bohr model"
+          ],
+          "learning_objectives": [
+            "Write electronic configurations"
+          ],
+          "common_misconceptions": [
+            "Electrons orbit like planets",
+            "Atomic mass = number of protons"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Periodic Table",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Periodic Classification",
+          "concepts": [
+            "Periodic law",
+            "Groups and periods",
+            "Periodic trends (atomic radius, ionization energy)",
+            "Metals and non-metals",
+            "Families (alkali, halogens, noble gases)"
+          ],
+          "learning_objectives": [
+            "Predict properties from position"
+          ],
+          "common_misconceptions": [
+            "Group number = valence electrons always",
+            "Periods are columns"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chemical Bonding",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Types of Bonds",
+          "concepts": [
+            "Ionic bonding",
+            "Covalent bonding",
+            "Metallic bonding",
+            "Coordinate bonding",
+            "Intermolecular forces"
+          ],
+          "learning_objectives": [
+            "Draw dot-cross diagrams",
+            "Predict bond types"
+          ],
+          "common_misconceptions": [
+            "All metals form ionic bonds",
+            "Covalent bonds are weaker than ionic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Stoichiometry",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Chemical Calculations",
+          "concepts": [
+            "Relative atomic mass",
+            "Mole concept",
+            "Molar mass",
+            "Avogadro's constant",
+            "Empirical and molecular formulae",
+            "Chemical equations and calculations"
+          ],
+          "learning_objectives": [
+            "Perform stoichiometric calculations"
+          ],
+          "common_misconceptions": [
+            "Mole is only for gases",
+            "Molar mass in grams only"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Acids, Bases and Salts",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Properties and Reactions",
+          "concepts": [
+            "Definitions (Arrhenius, Bronsted-Lowry)",
+            "Strong and weak acids/bases",
+            "pH scale",
+            "Neutralization",
+            "Preparation of salts",
+            "Uses of acids and bases"
+          ],
+          "learning_objectives": [
+            "Prepare salts in the lab"
+          ],
+          "common_misconceptions": [
+            "All acids are strong/dangerous",
+            "pH 7 is always neutral"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Water and Solutions",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Solubility",
+          "concepts": [
+            "Water as universal solvent",
+            "Solubility",
+            "Saturated solutions",
+            "Crystallization",
+            "Water treatment"
+          ],
+          "learning_objectives": [
+            "Determine solubility"
+          ],
+          "common_misconceptions": [
+            "All salts dissolve in water",
+            "Solubility = amount dissolved"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Air and Combustion",
+      "term": 3,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "Atmospheric Chemistry",
+          "concepts": [
+            "Composition of air",
+            "Oxygen and its properties",
+            "Combustion",
+            "Rusting",
+            "Air pollution"
+          ],
+          "learning_objectives": [
+            "Explain combustion and rusting"
+          ],
+          "common_misconceptions": [
+            "Air is only oxygen",
+            "Burning always needs oxygen"
+          ]
+        }
+      ]
+    }
+  ]
+}

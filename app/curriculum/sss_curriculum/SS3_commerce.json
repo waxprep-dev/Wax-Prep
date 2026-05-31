@@ -1,0 +1,161 @@
+{
+  "subject_name": "Commerce",
+  "class_level": "SS3",
+  "exam_relevance": [
+    "WAEC",
+    "NECO",
+    "JAMB"
+  ],
+  "description": "Senior Secondary School 3 Commerce - SSCE preparation and comprehensive revision",
+  "waec_high_priority_topics": [
+    "Trade Revision",
+    "Business Units",
+    "Finance",
+    "Transport and Communication"
+  ],
+  "topics": [
+    {
+      "title": "Trade Revision",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Trade Revision",
+          "concepts": [
+            "Home trade",
+            "Foreign trade",
+            "Aids to trade"
+          ],
+          "learning_objectives": [
+            "Understand trade revision"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Business Units",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Business Units",
+          "concepts": [
+            "Sole trader",
+            "Partnership",
+            "Companies"
+          ],
+          "learning_objectives": [
+            "Understand business units"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Finance",
+      "term": 1,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Finance",
+          "concepts": [
+            "Banking",
+            "Insurance",
+            "Stock exchange"
+          ],
+          "learning_objectives": [
+            "Understand finance"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Transport and Communication",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Transport and Communication",
+          "concepts": [
+            "Transport modes",
+            "Communication services"
+          ],
+          "learning_objectives": [
+            "Understand transport and communication"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Marketing",
+      "term": 2,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "Marketing",
+          "concepts": [
+            "Marketing mix",
+            "Consumer protection"
+          ],
+          "learning_objectives": [
+            "Understand marketing"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "E-Commerce",
+      "term": 2,
+      "waec_frequency": "medium",
+      "subtopics": [
+        {
+          "title": "E-Commerce",
+          "concepts": [
+            "Online business",
+            "Digital payments"
+          ],
+          "learning_objectives": [
+            "Understand e-commerce"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WAEC/NECO/JAMB Revision",
+      "term": 3,
+      "waec_frequency": "high",
+      "subtopics": [
+        {
+          "title": "WAEC/NECO/JAMB Revision",
+          "concepts": [
+            "Past questions",
+            "Exam techniques"
+          ],
+          "learning_objectives": [
+            "Understand waec/neco/jamb revision"
+          ],
+          "common_misconceptions": [
+            "Common misconception about this topic"
+          ]
+        }
+      ]
+    }
+  ]
+}
